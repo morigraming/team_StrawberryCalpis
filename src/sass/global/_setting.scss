@@ -12,13 +12,12 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
-
-$base-font-family: "";
-$second-font-family: "";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif:wght@400;700&display=swap");
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Noto Serif", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -33,11 +32,18 @@ $bold: 700;
 ////////////////////
 // 色の指定
 ////////////////////
+// 透過度
+$opacity: 0.6;
+$hover-opacity: 0.8;
 
-//色指定（共通性のあるものは出来る限り指定すると良い）
+//汎用色
 $black: #111;
+$black3: #333;
 $white: #fff;
-
+$yellow: #f9f871;
+$gray: #c4c4c4;
+$yellow-bg: #ffea2e;
+$orange: #ffba6a;
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -50,7 +56,6 @@ $breakpoints: (
   lg: 1024,
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -71,7 +76,6 @@ $mediaquerys: (
 @function rem($pixels) {
   @return math.div($pixels, 16) * 1rem;
 }
-
 
 ////////////////////
 // 非表示設定
