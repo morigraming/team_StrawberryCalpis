@@ -2,6 +2,16 @@
 
 .c-btn {
   padding: rem(10) rem(40);
-  background-color: black;
-  color: yellow;
+  background-color: $black3;
+  color: $white;
+  border: 1px solid $white;
+  display: inline-block;
+  width: 100%;
+  max-width: 335px;
+  text-align: center;
+}
+@include mq(md) {
+  .c-btn {
+    max-width: 360px;
+  }
 }
