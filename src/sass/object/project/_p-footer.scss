@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-footer {
+  background-color: $black;
+}
+
+.p-footer__contents {
+  @include mq("md") {
+    padding: 0 rem(32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: rem(70);
+  @include mq("md") {
+    margin: 0;
+  }
+}
+
+.p-footer__copyright {
+  color: $white;
+  font-size: rem(11);
+  letter-spacing: rem(1.2);
+  display: block;
+  text-align: center;
+  margin-top: rem(32);
+  @include mq("md") {
+    font-size: rem(15);
+    margin-top: rem(65);
+  }
+}
