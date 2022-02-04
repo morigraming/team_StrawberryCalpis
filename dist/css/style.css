@@ -151,10 +151,15 @@ select::-ms-expand {
 }
 
 .c-btn {
-	background-color: black;
-	color: yellow;
+	background-color: #333;
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	max-width: 335px;
 	padding: 10px 40px;
 	padding: 0.625rem 2.5rem;
+	text-align: center;
+	width: 100%;
 }
 
 .c-map {
@@ -566,6 +571,11 @@ a:hover {
 
 .c-relatedtitle {
 	background-color: #333;
+}
+
+.c-btn {
+	max-width: 360px;
+
 }
 
 .c-test {
