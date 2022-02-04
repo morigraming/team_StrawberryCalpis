@@ -58,6 +58,7 @@
 .p-card__text {
   font-size: rem(14);
   margin-top: rem(8);
+  color: $black3;
 }
 
 .p-card__meta {
@@ -73,10 +74,12 @@
   font-size: rem(14);
   padding: rem(1) rem(4);
   background-color: $yellow;
+  color: $black3;
 }
 
 .p-card__date {
   font-size: rem(14);
+  color: $black3;
 }
 
 .p-card:hover .p-card__contents {
