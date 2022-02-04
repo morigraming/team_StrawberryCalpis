@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.c-relatedtitle {
+  width: 100%;
+  color: $white;
+  border: $white rem(1) solid;
+  height: rem(42);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq("md") {
+    background-color: $black3;
+  }
+}
+
+.c-relatedtitle__title {
+  margin-left: auto;
+  margin-right: auto;
+}

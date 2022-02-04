@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.p-workscard {
+  width: 100%;
+  position: relative;
+
+  @include mq("md") {
+    width: rem(525);
+  }
+}
+
+.p-workscard__img {
+  width: 100%;
+  position: relative;
+}
+.p-workscard__img::before {
+  content: "";
+  display: block;
+  padding-top: 66.67%;
+  @include mq("md") {
+    padding-top: 66.48%;
+  }
+}
+.p-workscard__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-workscard__category {
+  color: $white;
+  background-color: $black;
+  padding: rem(8) rem(20);
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.p-workscard__title {
+  color: $white;
+  text-align: center;
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 1.75;
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(12);
+  }
+}
