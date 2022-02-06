@@ -388,6 +388,59 @@ select::-ms-expand {
 	width: 1.5rem;
 }
 
+.c-pagenation01 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.c-pagenation01__item,
+.c-pagenation01__prev,
+.c-pagenation01__next {
+	cursor: pointer;
+	height: 24px;
+	height: 1.5rem;
+	outline: 1px solid #fff;
+	outline: 0.0625rem solid #fff;
+	outline-offset: -1px;
+	outline-offset: -0.0625rem;
+	text-align: center;
+}
+
+.c-pagenation01__item:hover,
+.c-pagenation01__prev:hover,
+.c-pagenation01__next:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.c-pagenation01__prev,
+.c-pagenation01__next {
+	padding: 0 13px;
+	padding: 0 0.8125rem;
+}
+
+.c-pagenation01__item {
+	margin-left: 16px;
+	margin-left: 1rem;
+	width: 24px;
+	width: 1.5rem;
+}
+
+.c-pagenation01__item:nth-child(2),
+.c-pagenation01__next {
+	margin-left: 24px;
+	margin-left: 1.5rem;
+}
+
+.c-pagenation01__item.current {
+	background-color: #fff;
+	color: #333;
+}
+
 .c-relatedtitle {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -442,6 +495,7 @@ select::-ms-expand {
 }
 
 .c-tab__item {
+	cursor: pointer;
 	padding: 3px 8px;
 	padding: 0.1875rem 0.5rem;
 }

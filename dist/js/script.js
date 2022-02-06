@@ -55,5 +55,10 @@ jQuery(function ($) {
   $('.c-tab__item').on('click', function () {
     $('.c-tab__item.is-active').removeClass('is-active');
     $(this).addClass('is-active');
+  }); //ページネーション01
+
+  $('.c-pagenation01__item').on('click', function () {
+    $('.c-pagenation01__item.current').removeClass('current');
+    $(this).addClass('current');
   });
 });

@@ -6,6 +6,7 @@
 }
 .c-tab__item {
   padding: rem(3) rem(8);
+  cursor: pointer;
 }
 .c-tab__item.is-active {
   color: #333;
