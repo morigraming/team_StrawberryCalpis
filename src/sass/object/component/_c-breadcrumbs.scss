@@ -1,0 +1,10 @@
+@use "global" as *;
+.c-breadcrumbs {
+  color: $white;
+  font-size: rem(16);
+  padding: rem(16) 0;
+}
+
+.c-breadcrumbs__gt {
+  padding: 0 rem(10);
+}
