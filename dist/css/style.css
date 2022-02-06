@@ -211,6 +211,40 @@ select::-ms-expand {
 	transform: rotate(-45deg);
 }
 
+.c-eyecatch {
+	height: 425px;
+	height: 26.5625rem;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.c-eyecatch__bg {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.c-eyecatch__bg img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+}
+
+.c-page-title {
+	color: #fff;
+	font-size: 30px;
+	font-size: 1.875rem;
+	font-weight: 700;
+	left: 50%;
+	letter-spacing: 0.002em;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 .c-header-nav {
 	color: #fff;
 	display: none;
@@ -657,6 +691,14 @@ a:hover {
 
 .c-burger-btn {
 	display: none;
+}
+
+.c-eyecatch {
+	height: 23.125rem;
+}
+
+.c-page-title {
+	font-size: 2.1875rem;
 }
 
 .c-header-nav {
