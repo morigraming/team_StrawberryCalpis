@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-page-top-btn {
+  background-color: red;
+  display: inline-block;
+  width: rem(45);
+  height: rem(45);
+  position: fixed;
+  right: rem(20);
+  bottom: rem(40);
+}
+.c-page-top-btn img {
+  width: rem(24);
+  margin: 0 auto;
+  padding: rem(16) 0;
+}
