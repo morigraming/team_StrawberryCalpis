@@ -2,6 +2,11 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 }
 
+body {
+	background-color: #111;
+	color: #fff;
+}
+
 .u-desktop {
 	display: none;
 }
@@ -153,7 +158,6 @@ select::-ms-expand {
 .c-btn {
 	background-color: #333;
 	border: 1px solid #fff;
-	color: #fff;
 	display: inline-block;
 	max-width: 335px;
 	padding: 10px 40px;
@@ -233,7 +237,6 @@ select::-ms-expand {
 }
 
 .c-page-title {
-	color: #fff;
 	font-size: 30px;
 	font-size: 1.875rem;
 	font-weight: 700;
@@ -246,7 +249,6 @@ select::-ms-expand {
 }
 
 .c-header-nav {
-	color: #fff;
 	display: none;
 	height: inherit;
 }
@@ -327,7 +329,6 @@ select::-ms-expand {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	color: #fff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -366,7 +367,7 @@ select::-ms-expand {
 }
 
 .c-page-top-btn {
-	background-color: red;
+	background-color: #fff;
 	bottom: 40px;
 	bottom: 2.5rem;
 	display: inline-block;
@@ -410,6 +411,28 @@ select::-ms-expand {
 	margin-right: auto;
 }
 
+.c-section-title {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 300;
+	position: relative;
+	text-align: center;
+}
+
+.c-section-title::before {
+	color: #f9f871;
+	content: "Content";
+	font-family: "Noto Serif", serif;
+	font-size: 50px;
+	font-size: 3.125rem;
+	left: 50%;
+	opacity: 0.2;
+	position: absolute;
+	top: -0.9em;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
 .c-tab {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -419,9 +442,6 @@ select::-ms-expand {
 }
 
 .c-tab__item {
-	background-color: red;
-	color: #fff;
-	letter-spacing: 0.002em;
 	padding: 3px 8px;
 	padding: 0.1875rem 0.5rem;
 }
@@ -590,6 +610,7 @@ select::-ms-expand {
 	background-color: rgba(0, 0, 0, .5);
 	height: 50px;
 	height: 3.125rem;
+	width: 100%;
 }
 
 .p-header-contents {
@@ -782,6 +803,20 @@ a:hover {
 
 .c-relatedtitle {
 	background-color: #333;
+}
+
+.c-section-title {
+	font-size: 1.875rem;
+}
+
+.c-section-title::before {
+	font-size: 6.875rem;
+	left: 0;
+	top: -0.3em;
+	-webkit-transform: none;
+	transform: none;
+	-webkit-transform: initial;
+	transform: initial;
 }
 
 .l-footer {

@@ -5,12 +5,9 @@
   flex-wrap: wrap;
 }
 .c-tab__item {
-  color: #fff;
-  background-color: red; 
-  letter-spacing: 0.002em;
   padding: rem(3) rem(8);
 }
 .c-tab__item.is-active {
   color: #333;
-  background-color: #fff;
+  background-color: $white;
 }

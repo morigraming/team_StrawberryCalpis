@@ -2,7 +2,6 @@
 
 .c-header-nav {
   display: none;
-  color: #fff;
   height: inherit;
   @include mq("md") {
     display: flex;
@@ -21,7 +20,7 @@
 }
 
 .c-header-nav__item:nth-of-type(6) {
-  background-color: #fff;
+  background-color: $white;
 }
 .c-header-nav__link {
   display: inline-block;
