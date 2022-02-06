@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta name="robots" content="noindex" />
   <meta charset="UTF-8" />
@@ -25,23 +24,35 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
-
 <body>
-  <div class="l-top-header p-top-header"> これはヘッダーです </div>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
+  <header class="l-header p-header">
+    <div class="p-header-contents">
+      <a href="" class="p-header__logo">
+        <img src="./images/common/logo.png" alt="">
+      </a>
+      <nav class="c-header-nav">
+        <ul class="c-header-nav__list">
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__link">お知らせ</a></li>
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__link">事業内容</a></li>
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__link">制作実績</a></li>
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__link">企業概要</a></li>
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__link">ブログ</a></li>
+          <li class="c-header-nav__item"><a href="" class="c-header-nav__btn">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="c-burger-btn">
+        <span class="c-bar c-bar--01"></span>
+        <span class="c-bar c-bar--02"></span>
+        <span class="c-bar c-bar--03"></span>
+      </div>
+    </div>
+  </header>
+  <a href="#" class="c-btn">詳しく見る</a>
   <div class="l-footer p-footer">
     <div class="p-footer__contents">
       <div class="p-footer__logo">
@@ -61,5 +72,4 @@
     <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
   </div>
 </body>
-
 </html>

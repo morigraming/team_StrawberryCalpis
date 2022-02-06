@@ -26,16 +26,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // ヘッダー
   $(window).on('scroll', function () {
     if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+      $('.header').css('background', 'rgba(0, 0, 0, 1)');
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $('.header').css('background', 'rgba(0 , 0, 0, .5)');
     }
+  });
+
+  // ハンバーガーメニュー
+  $('.c-burger-btn').on('click', function () {
+    $(this).toggleClass('js-close');
+    $('.menu').toggleClass('js-open');
   });
 
   //ドロワーメニュー
   $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+    $(this).toggleClass('js-open');
+    $('.menu').toggleClass('js-open');
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
