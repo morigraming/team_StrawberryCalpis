@@ -263,6 +263,9 @@ select::-ms-expand {
 .c-header-nav__item {
 	display: block;
 	height: 100%;
+}
+
+.c-header-nav__item:not(:first-of-type) {
 	margin-left: 32px;
 	margin-left: 2rem;
 }
@@ -383,6 +386,27 @@ select::-ms-expand {
 .c-relatedtitle__title {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.c-tab {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.c-tab__item {
+	background-color: red;
+	color: #fff;
+	letter-spacing: 0.002em;
+	padding: 3px 8px;
+	padding: 0.1875rem 0.5rem;
+}
+
+.c-tab__item.is-active {
+	background-color: #fff;
+	color: #333;
 }
 
 .l-footer {

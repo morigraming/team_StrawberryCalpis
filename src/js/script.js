@@ -55,6 +55,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  // ブログページのタブ
+  $('.c-tab__item').on('click', function () {
+    $('.c-tab__item.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
+  });
+
 
 
 });

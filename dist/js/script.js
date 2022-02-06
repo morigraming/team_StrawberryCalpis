@@ -50,5 +50,10 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
+  }); // ブログページのタブ
+
+  $('.c-tab__item').on('click', function () {
+    $('.c-tab__item.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
   });
 });

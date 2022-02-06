@@ -15,8 +15,11 @@
 .c-header-nav__item {
   display: block;
   height: 100%;
+}
+.c-header-nav__item:not(:first-of-type) {
   margin-left: rem(32);
 }
+
 .c-header-nav__item:nth-of-type(6) {
   background-color: #fff;
 }
