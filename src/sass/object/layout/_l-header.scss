@@ -1,1 +1,9 @@
 @use "global" as *;
+
+.l-header {
+  padding: 0 rem(22) 0 rem(20);
+  @include mq("md") {
+    padding-left: rem(32);
+    padding-right: 0;
+  }
+}

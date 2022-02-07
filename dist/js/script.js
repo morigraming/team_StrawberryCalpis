@@ -2,7 +2,7 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  var topBtn = $('.page-top');
+  var topBtn = $('.c-page-top-btn');
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
@@ -24,15 +24,20 @@ jQuery(function ($) {
 
   $(window).on('scroll', function () {
     if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+      $('.header').css('background', 'rgba(0, 0, 0, 1)');
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $('.header').css('background', 'rgba(0 , 0, 0, .5)');
     }
+  }); // ハンバーガーメニュー
+
+  $('.c-burger-btn').on('click', function () {
+    $(this).toggleClass('js-close');
+    $('.menu').toggleClass('js-open');
   }); //ドロワーメニュー
 
   $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+    $(this).toggleClass('js-open');
+    $('.menu').toggleClass('js-open');
   }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
@@ -45,5 +50,15 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
+  }); // ブログページのタブ
+
+  $('.c-tab__item').on('click', function () {
+    $('.c-tab__item.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
+  }); //ページネーション01
+
+  $('.c-pagenation01__item').on('click', function () {
+    $('.c-pagenation01__item.current').removeClass('current');
+    $(this).addClass('current');
   });
 });

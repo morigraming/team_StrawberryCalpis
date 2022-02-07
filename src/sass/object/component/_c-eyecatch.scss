@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.c-eyecatch {
+  width: 100%;
+  height: rem(425);
+  overflow: hidden;
+  position: relative;
+  @include mq(md) {
+    height: rem(370);
+  }
+}
+.c-eyecatch__bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.c-eyecatch__bg img {
+  height: 100%;
+  object-fit: cover;
+}
+.c-page-title {
+  font-size: rem(30);
+  letter-spacing: 0.002em;
+  font-weight: $bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-burger-btn {
+  width: rem(24);
+  position: relative;
+  @include mq("md") {
+    display: none;
+  }
+}
+.c-bar {
+  content: "";
+  background-color: $white;
+  position: absolute;
+  width: rem(24);
+  height: rem(2);
+}
+.c-bar--01 {
+  top: rem(14);
+}
+.c-bar--02 {
+  top: rem(20);
+}
+.c-bar--03 {
+  top: rem(26);
+}
+.c-burger-btn.js-close .c-bar--01 {
+  top: rem(20);
+  transform: rotate(45deg);
+}
+.c-burger-btn.js-close .c-bar--02 {
+  opacity: 0;
+}
+.c-burger-btn.js-close .c-bar--03 {
+  top: rem(20);
+  transform: rotate(-45deg);
+}

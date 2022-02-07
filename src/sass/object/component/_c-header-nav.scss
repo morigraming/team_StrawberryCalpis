@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.c-header-nav {
+  display: none;
+  height: inherit;
+  @include mq("md") {
+    display: flex;
+  }
+}
+.c-header-nav__list {
+  display: flex;
+  align-items: center;
+}
+.c-header-nav__item {
+  display: block;
+  height: 100%;
+}
+.c-header-nav__item:not(:first-of-type) {
+  margin-left: rem(32);
+}
+
+.c-header-nav__item:nth-of-type(6) {
+  background-color: $white;
+}
+.c-header-nav__link {
+  display: inline-block;
+  height: 100%;
+  line-height: rem(50);
+}
+.c-header-nav__btn {
+  color: $black3;
+  padding: 0 rem(32);
+  line-height: rem(50);
+}

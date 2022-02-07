@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-header {
+  background-color: rgba(0, 0, 0, .5);
+  height: rem(50);
+  width: 100%;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+}
+.p-header-contents {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+.p-header__logo {
+  display: inline-block;
+  padding: 13px 0;
+}
+.p-header__logo img {
+  width: rem(70);
+
+}

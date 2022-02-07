@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-pagenation01 {
+  display: flex;
+  justify-content: center;
+}
+.c-pagenation01__item,
+.c-pagenation01__prev,
+.c-pagenation01__next {
+  height: rem(24);
+  outline: rem(1) solid $white;
+  outline-offset: rem(-1);
+  text-align: center;
+  cursor: pointer;
+}
+.c-pagenation01__item:hover,
+.c-pagenation01__prev:hover,
+.c-pagenation01__next:hover  {
+  color: $black3;
+  background-color: $white;
+}
+.c-pagenation01__prev,
+.c-pagenation01__next {
+  padding: 0 rem(13);
+}
+.c-pagenation01__item {
+  width: rem(24);
+  margin-left: rem(16);
+}
+.c-pagenation01__item:nth-child(2),
+.c-pagenation01__next {
+  margin-left: rem(24);
+}
+.c-pagenation01__item.current {
+  color: $black3;
+  background-color: $white;
+}

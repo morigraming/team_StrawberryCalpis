@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.c-section-title {
+  font-size: rem(20);
+  font-weight: $regular;
+  text-align: center;
+  position: relative;
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+.c-section-title::before {
+  content: "Content";
+  font-size: rem(50);
+  font-family: $second-font-family;
+  color: $yellow;
+  opacity: .2;
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    font-size: rem(110);
+    top: -0.3em;
+    left: 0;
+    transform: initial;
+  }
+}

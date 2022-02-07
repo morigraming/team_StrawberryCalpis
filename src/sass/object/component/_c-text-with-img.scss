@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-text-with-img {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.c-text-with-img__img {
+  width: 100%;
+  @include mq(md) {
+    width: 50%;
+    margin-right: rem(30);
+  }
+}
+.c-text-with-img__text-box {
+  @include mq(md) {
+    width: calc(50% - 30px);
+  }
+}
+.c-text-with-img__title {
+  font-size: rem(20);
+  font-weight: $regular;
+  text-align: center;
+  margin-top: rem(24);
+  @include mq(md) {
+    font-size: rem(25);
+    text-align-last: left;
+  }
+}
+.c-text-with-img__text {
+  line-height: calc(35 / 16);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

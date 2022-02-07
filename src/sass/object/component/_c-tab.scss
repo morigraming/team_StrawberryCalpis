@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-tab__item {
+  padding: rem(3) rem(8);
+  cursor: pointer;
+}
+.c-tab__item.is-active {
+  color: #333;
+  background-color: $white;
+}
