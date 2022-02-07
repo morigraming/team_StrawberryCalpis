@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+<%- include('./common/_p-head') %>
 
   <body>
-    <%- include('./common/_header') %>
+    <%- include('./common/_p-header') %>
       <%- include('./component/_c-section-title') %>
         <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
           <%- include('./component/_c-page-top-btn') %>
-            <%- include('./common/_footer') %>
-              <%- include('./top/_mainview') %>
+            <%- include('./common/_p-footer') %>
+              <%- include('./top/_p-mainview') %>
                 <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
                   <% for (var i=0; i < 4; i++) { %>
                     <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
                       <% } %>
 
-                        <%- include('./common/_footer') %>
+                        <%- include('./common/_p-footer') %>
 
                           <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>

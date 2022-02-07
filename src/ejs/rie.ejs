@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+<%- include('./common/_p-head') %>
 
   <body>
 
-    <%- include('./common/_top-header') %>
+    <%- include('./common/_p-header') %>
       <section class="rietest">
-        <h2>リエ作成パーツ表示確認用ページです！</h2>
-        <%- include('./top/_mainview') %>
+        <h2>リエ作成パーツ表示確認用ページです!</h2>
+        <%- include('./top/_p-mainview') %>
           <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
             <div class="l-inner">
 
 
-              <%- include('./common/_cards') %>
+              <%- include('./common/_p-cards') %>
 
                 <%- include('./component/_c-relatedtitle') %>
-                  <%- include('./common/_workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
                     title:'CodeUps株式会社'}) %>
                     <%- include('./component/_c-map') %>
-                      <%- include('./common/_news') %>
+                      <%- include('./common/_p-news') %>
 
             </div>
-            <%- include('./top/_topcontainer', {src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
+            <%- include('./top/_p-topcontainer', {src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
               text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
               %>
-              <%- include('./common/_modal') %>
-                <%- include('./common/_footer') %>
+              <%- include('./common/_p-modal') %>
+                <%- include('./common/_p-footer') %>
 
       </section>
 
