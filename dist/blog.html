@@ -92,5 +92,18 @@
     </div>
     <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
   </div>
+  <script>
+    let mySwiper = new Swiper('.p-mainview__slider', {
+      // オプションの設定
+      loop: true, //ループ可能（ループモードを有効に）
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
 </body>
 </html>

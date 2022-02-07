@@ -77,52 +77,78 @@
     </div>
     <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
   </div>
-  <div class="p-mainview l-mainview">
-    <!-- スライダーのメインコンテナの div 要素（必須） -->
-    <div class="p-mainview__slider swiper">
-      <!-- スライドを囲む div 要素（必須） -->
-      <div class="swiper-wrapper">
-        <!-- それぞれのスライドの div 要素（必須） -->
-        <div class="swiper-slide">
-          <div class="slide-img"><img src="images/top/mainview__img01.jpeg" alt=""></div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide-img"><img src="images/top/mainview__img02.jpeg" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide-img"><img src="images/top/mainview__img03.jpeg" alt=""></div>
-        </div>
-      </div>
-    </div>
-    <div class="p-mainview__contents">
-      <h1 class="p-mainview__title"> メインタイトルが入ります </h1>
-      <p class="p-mainview__subtitle"> サブタイトルが入ります </p>
-    </div>
-  </div>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <a href="#" class="c-btn">これはテストです</a>
-  <div class="p-footer">
-    <div class="p-footer__contents">
-      <div class="p-footer__logo">
-        <img src="images/common/footer__logo.png" alt="">
-      </div>
-      <div class="c-nav">
-        <ul class="c-nav__list">
-          <li class="c-nav__item"><a href="" class="c-nav__link">お知らせ</a></li>
-          <li class="c-nav__item"><a href="" class="c-nav__link">事業内容</a></li>
-          <li class="c-nav__item"><a href="" class="c-nav__link">制作実績</a></li>
-          <li class="c-nav__item"><a href="" class="c-nav__link">企業概要</a></li>
-          <li class="c-nav__item"><a href="" class="c-nav__link">ブログ</a></li>
-          <li class="c-nav__item"><a href="" class="c-nav__link">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-    <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
-  </div>
+  <script>
+    let mySwiper = new Swiper('.p-mainview__slider', {
+      // オプションの設定
+      loop: true, //ループ可能（ループモードを有効に）
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+<div class="p-mainview l-mainview">
+  <!-- スライダーのメインコンテナの div 要素（必須） -->
+  <div class="p-mainview__slider swiper">
+    <!-- スライドを囲む div 要素（必須） -->
+    <div class="swiper-wrapper">
+      <!-- それぞれのスライドの div 要素（必須） -->
+      <div class="swiper-slide">
+        <div class="slide-img"><img src="images/top/mainview__img01.jpeg" alt=""></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-img"><img src="images/top/mainview__img02.jpeg" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-img"><img src="images/top/mainview__img03.jpeg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="p-mainview__contents">
+    <h1 class="p-mainview__title"> メインタイトルが入ります </h1>
+    <p class="p-mainview__subtitle"> サブタイトルが入ります </p>
+  </div>
+</div>
+<a href="#" class="c-btn">これはテストです</a>
+<a href="#" class="c-btn">これはテストです</a>
+<a href="#" class="c-btn">これはテストです</a>
+<a href="#" class="c-btn">これはテストです</a>
+<a href="#" class="c-btn">これはテストです</a>
+<div class="p-footer">
+  <div class="p-footer__contents">
+    <div class="p-footer__logo">
+      <img src="images/common/footer__logo.png" alt="">
+    </div>
+    <div class="c-nav">
+      <ul class="c-nav__list">
+        <li class="c-nav__item"><a href="" class="c-nav__link">お知らせ</a></li>
+        <li class="c-nav__item"><a href="" class="c-nav__link">事業内容</a></li>
+        <li class="c-nav__item"><a href="" class="c-nav__link">制作実績</a></li>
+        <li class="c-nav__item"><a href="" class="c-nav__link">企業概要</a></li>
+        <li class="c-nav__item"><a href="" class="c-nav__link">ブログ</a></li>
+        <li class="c-nav__item"><a href="" class="c-nav__link">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
+</div>
+<script>
+  let mySwiper = new Swiper('.p-mainview__slider', {
+    // オプションの設定
+    loop: true, //ループ可能（ループモードを有効に）
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>
 </html>

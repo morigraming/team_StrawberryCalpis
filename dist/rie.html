@@ -56,6 +56,7 @@
   </header>
   <section class="rietest">
     <h2>リエ作成パーツ表示確認用ページです!</h2>
+    <h3 class="rietest__partstitle">メインビュー:p-mainview</h3>
     <div class="p-mainview l-mainview">
       <!-- スライダーのメインコンテナの div 要素（必須） -->
       <div class="p-mainview__slider swiper">
@@ -79,12 +80,14 @@
         <p class="p-mainview__subtitle"> サブタイトルが入ります </p>
       </div>
     </div>
+    <h3 class="rietest__partstitle">パンくず:c-breadcrumbs</h3>
     <div class="c-breadcrumbs">
       <div class="l-inner">
         <p><a href="index.html" class="c-breadcrumbs__link">トップ</a><span class="c-breadcrumbs__gt">&gt;</span> 事業内容 </p>
       </div>
     </div>
     <div class="l-inner">
+      <h3 class="rietest__partstitle">カード:p-cards, p-card</h3>
       <div class="p-cards">
         <div class="p-card">
           <div class="p-card__img">
@@ -139,10 +142,12 @@
           </div>
         </div>
       </div>
+      <h3 class="rietest__partstitle">関連記事タイトル:c-relatedtitle</h3>
       <div class="c-relatedtitle">
         <h3 class="c-relatedtitle__title u-mobile"> おすすめ記事 </h3>
         <h3 class="c-relatedtitle__title u-desktop"> 関連記事 </h3>
       </div>
+      <h3 class="rietest__partstitle">制作実績カード:p-workscard</h3>
       <div class="p-workscard">
         <div class="p-workscard__img">
           <img src="./images/works/works__img01.jpeg" alt="">
@@ -150,9 +155,17 @@
         <div class="p-workscard__category"> カテゴリ </div>
         <div class="p-workscard__title"> CodeUps株式会社 </div>
       </div>
+      <h3 class="rietest__partstitle">ページネーション（一覧）:c-pagenation02</h3>
+      <ul class="c-pagenation02">
+        <li class="c-pagenation02__prev"><a href="#">PREV</a></li>
+        <li class="c-pagenation02__all"><a href="#">一覧</a></li>
+        <li class="c-pagenation02__next"><a href="#">NEXT</a></li>
+      </ul>
+      <h3 class="rietest__partstitle">gogleマップ:c-map</h3>
       <div class="c-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.991898658345!2d139.7454329!3d35.6585805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1643940962649!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
+      <h3 class="rietest__partstitle">お知らせ:p-news</h3>
       <dl class="p-news">
         <div class="p-news__row">
           <dt class="p-news__meta">
@@ -184,6 +197,7 @@
         </div>
       </dl>
     </div>
+    <h3 class="rietest__partstitle">トップページコンテンツ横並び:p-topcontainer</h3>
     <div class="p-topcontainer">
       <div class="p-topcontainer__bg"></div>
       <div class="l-inner">
@@ -201,6 +215,7 @@
         </div>
       </div>
     </div>
+    <h3 class="rietest__partstitle">スマホメニュー:p-modal</h3>
     <div class="p-modal">
       <div class="c-nav">
         <ul class="c-nav__list">
@@ -213,26 +228,25 @@
         </ul>
       </div>
     </div>
-    <div class="p-footer">
-      <div class="p-footer__contents">
-        <div class="p-footer__logo">
-          <img src="images/common/footer__logo.png" alt="">
-        </div>
-        <div class="c-nav">
-          <ul class="c-nav__list">
-            <li class="c-nav__item"><a href="" class="c-nav__link">お知らせ</a></li>
-            <li class="c-nav__item"><a href="" class="c-nav__link">事業内容</a></li>
-            <li class="c-nav__item"><a href="" class="c-nav__link">制作実績</a></li>
-            <li class="c-nav__item"><a href="" class="c-nav__link">企業概要</a></li>
-            <li class="c-nav__item"><a href="" class="c-nav__link">ブログ</a></li>
-            <li class="c-nav__item"><a href="" class="c-nav__link">お問い合わせ</a></li>
-          </ul>
-        </div>
-      </div>
-      <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
-    </div>
   </section>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <div class="p-footer">
+    <div class="p-footer__contents">
+      <div class="p-footer__logo">
+        <img src="images/common/footer__logo.png" alt="">
+      </div>
+      <div class="c-nav">
+        <ul class="c-nav__list">
+          <li class="c-nav__item"><a href="" class="c-nav__link">お知らせ</a></li>
+          <li class="c-nav__item"><a href="" class="c-nav__link">事業内容</a></li>
+          <li class="c-nav__item"><a href="" class="c-nav__link">制作実績</a></li>
+          <li class="c-nav__item"><a href="" class="c-nav__link">企業概要</a></li>
+          <li class="c-nav__item"><a href="" class="c-nav__link">ブログ</a></li>
+          <li class="c-nav__item"><a href="" class="c-nav__link">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
+  </div>
   <script>
     let mySwiper = new Swiper('.p-mainview__slider', {
       // オプションの設定
@@ -244,5 +258,6 @@
       },
     });
   </script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>
 </html>
