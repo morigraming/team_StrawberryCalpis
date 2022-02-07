@@ -1,11 +1,12 @@
 @use "global" as *;
 
 .p-workscard {
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   position: relative;
-
   @include mq("md") {
     width: rem(525);
+    margin: 0;
   }
 }
 

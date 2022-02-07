@@ -1,0 +1,86 @@
+@use "global" as *;
+.p-mainview {
+  position: relative;
+}
+.p-mainview__slider {
+  position: relative;
+}
+
+.p-mainview__slider .slide-img {
+  height: 100vh;
+  max-height: rem(768);
+  overflow: hidden;
+  background-color: blue;
+
+  @include mq("md") {
+    max-height: rem(851);
+  }
+}
+
+.p-mainview__slider .slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-mainview__slider::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-mainview__contents {
+  text-align: center;
+  color: $white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.p-mainview__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  letter-spacing: 0.017em;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(50);
+    letter-spacing: 0.01em;
+  }
+}
+
+.p-mainview__subtitle {
+  font-size: rem(20);
+  font-weight: $bold;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  margin-top: rem(24);
+  @include mq("md") {
+    font-size: rem(25);
+    letter-spacing: 0.01em;
+  }
+}

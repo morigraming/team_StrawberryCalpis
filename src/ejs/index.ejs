@@ -6,11 +6,17 @@
     <%- include('./common/_top-header') %>
 
       <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
-        <%- include('./common/_footer') %>
 
 
+        <%- include('./top/_mainview') %>
+          <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+            <% for (var i=0; i < 4; i++) { %>
+              <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+                <% } %>
 
+                  <%- include('./common/_footer') %>
 
+                    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
 
 </html>

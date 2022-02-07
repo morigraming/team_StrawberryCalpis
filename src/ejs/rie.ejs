@@ -7,22 +7,43 @@
     <%- include('./common/_top-header') %>
       <section class="rietest">
         <h2>リエ作成パーツ表示確認用ページです！</h2>
-        <div class="l-inner">
+        <%- include('./top/_mainview') %>
+          <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
+            <div class="l-inner">
 
 
-          <%- include('./common/_card') %>
-            <%- include('./component/_c-relatedtitle') %>
-              <%- include('./common/_workscard') %>
-                <%- include('./component/_c-map') %>
-                  <%- include('./common/_news') %>
+              <%- include('./common/_cards') %>
 
-        </div>
+                <%- include('./component/_c-relatedtitle') %>
+                  <%- include('./common/_workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                    title:'CodeUps株式会社'}) %>
+                    <%- include('./component/_c-map') %>
+                      <%- include('./common/_news') %>
 
-        <%- include('./common/_footer') %>
+            </div>
+            <%- include('./top/_topcontainer', {src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
+              text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+              %>
+              <%- include('./common/_modal') %>
+                <%- include('./common/_footer') %>
 
       </section>
 
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+      <script>
+        let mySwiper = new Swiper('.p-mainview__slider', {
+          // オプションの設定
+          loop: true,  //ループ可能（ループモードを有効に）
+          effect: 'fade',
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+
+          },
+
+        });
+      </script>
 
   </body>
 

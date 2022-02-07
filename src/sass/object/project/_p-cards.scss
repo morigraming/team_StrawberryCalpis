@@ -1,0 +1,8 @@
+@use "global" as *;
+.p-cards {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
