@@ -13,8 +13,10 @@
           <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
             <div class="l-inner">
 
-              <h3 class="rietest__partstitle">カード:p-cards, p-card</h3>
-              <%- include('./common/_p-cards') %>
+              <h3 class="rietest__partstitle">カード:p-card, p-card</h3>
+              <%-
+                include('./common/_p-card',{src:'./images/works/works__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',category:'カテゴリ',
+                date:'2020/02/08'}) %>
                 <h3 class="rietest__partstitle">関連記事タイトル:c-relatedtitle</h3>
                 <%- include('./component/_c-relatedtitle') %>
                   <h3 class="rietest__partstitle">制作実績カード:p-workscard</h3>
