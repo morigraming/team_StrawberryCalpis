@@ -67,7 +67,5 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(this).addClass('current');
   });
   
-
-
-
 });
+

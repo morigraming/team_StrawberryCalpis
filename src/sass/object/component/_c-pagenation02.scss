@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.c-pagenation02 {
+  display: flex;
+  justify-content: center;
+}
+.c-pagenation02__all,
+.c-pagenation02__prev,
+.c-pagenation02__next {
+  height: rem(24);
+  outline: rem(1) solid $white;
+  outline-offset: rem(-1);
+  text-align: center;
+  cursor: pointer;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  padding: 0 rem(12);
+  min-width: rem(71);
+}
+.c-pagenation02__all:hover,
+.c-pagenation02__prev:hover,
+.c-pagenation02__next:hover {
+  color: $black3;
+  background-color: $white;
+}
+
+.c-pagenation02__all,
+.c-pagenation02__next {
+  margin-left: rem(24);
+}
