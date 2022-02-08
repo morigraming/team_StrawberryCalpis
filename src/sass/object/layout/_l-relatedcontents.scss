@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-relatedcontents {
+  padding: rem(120) 0;
+  @include mq("md") {
+    padding: rem(104) 0 rem(150);
+  }
+}
