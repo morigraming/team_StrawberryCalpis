@@ -21,14 +21,14 @@
   <link rel="icon" href="#" />
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -57,7 +57,7 @@
   <section class="rietest">
     <h2>リエ作成パーツ表示確認用ページです!</h2>
     <h3 class="rietest__partstitle">メインビュー:p-mainview</h3>
-    <div class="p-mainview l-mainview">
+    <div class="p-mainview">
       <!-- スライダーのメインコンテナの div 要素（必須） -->
       <div class="p-mainview__slider swiper">
         <!-- スライドを囲む div 要素（必須） -->
@@ -196,6 +196,72 @@
           <dd class="p-news__title"> 記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。 </dd>
         </div>
       </dl>
+      <h3 class="rietest__partstitle">制作実績スライダー:p-worksslider</h3>
+      <div class="p-singleworks__slider rietest__slider">
+        <div class="p-worksslider__main swiper">
+          <!--メインスライド　 スライドを囲む div 要素（必須） -->
+          <div class="swiper-wrapper">
+            <!-- それぞれのスライドの div 要素（必須） -->
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img01.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img02.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img03.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img04.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img01.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img02.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img03.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img04.jpeg" alt=""></div>
+            </div>
+            <!-- If we need navigation buttons -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-worksslider__thumbnail swiper">
+          <!-- サムネイルスライド　スライドを囲む div 要素（必須） -->
+          <div class="swiper-wrapper">
+            <!-- それぞれのスライドの div 要素（必須） -->
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img01.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img02.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img03.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img04.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img01.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img02.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img03.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img"><img src="./images/works/works__img04.jpeg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <h3 class="rietest__partstitle">トップページコンテンツ横並び:p-topcontainer</h3>
     <div class="p-topcontainer">
@@ -248,6 +314,7 @@
     <small class="p-footer__copyright"> &copy; 2021 CodeUps Inc. </small>
   </div>
   <script>
+    // メインビュースライダー設定
     let mySwiper = new Swiper('.p-mainview__slider', {
       // オプションの設定
       loop: true, //ループ可能（ループモードを有効に）
@@ -258,6 +325,42 @@
       },
     });
   </script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    // 制作実績スライダー設定
+    //メイン
+    var main = new Swiper('.p-worksslider__main', {
+      slidesPerView: 1,
+      centeredSlides: true,
+      loop: true,
+      loopedSlides: 8, //スライドの枚数と同じ値を指定
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    //サムネイル
+    var thumbnail = new Swiper('.p-worksslider__thumbnail', {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      loop: true,
+      loopedSlides: 8,
+      centeredSlides: true,
+      slideToClickedSlide: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 8,
+          spaceBetween: 10,
+        },
+      },
+    });
+    //4系～
+    //メインとサムネイルを紐づける
+    main.controller.control = thumbnail;
+    thumbnail.controller.control = main;
+  </script>
 </body>
 </html>

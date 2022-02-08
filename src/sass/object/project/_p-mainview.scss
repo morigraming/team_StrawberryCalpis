@@ -36,9 +36,9 @@
   z-index: 2;
 }
 
-.swiper-slide-active .slide-img,
-.swiper-slide-duplicate-active .slide-img,
-.swiper-slide-prev .slide-img {
+.p-mainview__slider .swiper-slide-active .slide-img,
+.p-mainview__slider .swiper-slide-duplicate-active .slide-img,
+.p-mainview__slider .swiper-slide-prev .slide-img {
   animation: zoomUp 10s linear 0s 1 normal both;
 }
 @keyframes zoomUp {
