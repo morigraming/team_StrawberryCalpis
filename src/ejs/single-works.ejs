@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_p-head') %>
+
+    <body>
+        <header>
+            <%- include('./common/_p-header') %>
+        </header>
+        <main>
+            <div class="l-breadcrumbs">
+                <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
+            </div>
+            <section class="p-single-works">
+                <div class="l-inner">
+                    <div class="p-single-works__inner">
+                        <h3 class="p-single-works__title">〇〇株式会社様 制作実績</h3>
+                        <div class="p-single-works__meta l-single-works__meta">
+                            <%- include('./component/_c-meta',{date:'2022/02/08',category:'カテゴリ3'}) %>
+                        </div>
+                        <div class="p-single-works__slider">
+                            <%- include('./common/_p-worksslider',{src1:'./images/works/works__img01.jpeg',src2:'./images/works/works__img02.jpeg',src3:'./images/works/works__img03.jpeg',src4:'./images/works/works__img04.jpeg',src5:'./images/works/works__img01.jpeg',src6:'./images/works/works__img02.jpeg',src7:'./images/works/works__img03.jpeg',src8:'./images/works/works__img04.jpeg'})
+                                %>
+                        </div>
+
+                        <div class="p-single-works__content l-single-works__content">
+                            <%- include('./common/_p-workscontent',{
+                                seisakutext:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                                designtext:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                                othertext:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+                                %>
+                        </div>
+
+                        <div class="p-single-works__pagenation l-single-works__pagenation">
+                            <%- include('./component/_c-pagenation02',{text:'事業内容'}) %>
+                        </div>
+                    </div>
+                    <div class="l-inner">
+                        <div class="p-relatedcontents l-relatedcontents">
+                            <div class="l-relatedcontents__title p-relatedcontents__title">
+                                <%- include('./component/_c-relatedtitle') %>
+                            </div>
+                            <div class="l-relatedcontents__cards p-relatedcontents__cards">
+                                <div class="p-relatedcontents__card">
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
+                                        %>
+                                </div>
+                                <div class="p-relatedcontents__card">
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
+                                        %>
+                                </div>
+                                <div class="p-relatedcontents__card">
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
+                                        %>
+                                </div>
+                                <div class="p-relatedcontents__card">
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
+                                        %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <%- include('./common/_p-footer') %>
+
+
+            <script>  // メインビュースライダー設定
+                let mySwiper = new Swiper('.p-mainview__slider', {
+                    // オプションの設定
+                    loop: true,  //ループ可能（ループモードを有効に）
+                    effect: 'fade',
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    },
+
+                });
+            </script>
+
+            <script>// 制作実績スライダー設定
+                //メイン
+                var main = new Swiper('.p-worksslider__main', {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    loop: true,
+                    loopedSlides: 8, //スライドの枚数と同じ値を指定
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false,
+
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+
+                //サムネイル
+                var thumbnail = new Swiper('.p-worksslider__thumbnail', {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                    loop: true,
+                    loopedSlides: 8,
+                    centeredSlides: true,
+                    slideToClickedSlide: true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 8,
+                            spaceBetween: 10,
+                        },
+                    },
+                });
+
+                //4系～
+                //メインとサムネイルを紐づける
+                main.controller.control = thumbnail;
+                thumbnail.controller.control = main;
+
+            </script>
+
+    </body>
+
+</html>
