@@ -612,6 +612,29 @@ select::-ms-expand {
 	color: #333;
 }
 
+.c-table__row {
+	border-bottom: 1px solid #fff;
+	border-bottom: 0.0625rem solid #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	padding: 17px 22px;
+	padding: 1.0625rem 1.375rem;
+	width: 100%;
+}
+
+.c-table__title {
+	min-width: 110px;
+	width: 31%;
+}
+
+.c-table__text {
+	letter-spacing: 0.001em;
+	width: 69%;
+}
+
 .c-text-with-img__img {
 	width: 100%;
 }
@@ -1435,6 +1458,19 @@ a:hover {
 .single-header {
 	font-size: 1.4375rem;
 	line-height: 1.5217391304;
+}
+
+.c-table__row {
+	font-size: 1rem;
+}
+
+.c-table__title {
+	min-width: 9.6875rem;
+	width: 14%;
+}
+
+.c-table__text {
+	width: 86%;
 }
 
 .c-text-with-img {
