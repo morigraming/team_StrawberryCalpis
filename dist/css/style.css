@@ -172,11 +172,40 @@ select::-ms-expand {
 	background-color: #333;
 	border: 1px solid #fff;
 	display: inline-block;
+	display: block;
 	max-width: 335px;
+	overflow: hidden;
 	padding: 10px 40px;
 	padding: 0.625rem 2.5rem;
+	position: relative;
 	text-align: center;
 	width: 100%;
+}
+
+.c-btn::before {
+	background-color: #fff;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	width: 100%;
+	z-index: -1;
+}
+
+.c-btn:hover {
+	color: #333;
+}
+
+.c-btn:hover.c-btn::before {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
 .c-burger-btn {
@@ -236,11 +265,22 @@ select::-ms-expand {
 	width: 100%;
 }
 
+.c-eyecatch::after {
+	background-color: rgba(17, 17, 17, .2);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .c-eyecatch__bg {
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
+	width: 100%;
 }
 
 .c-eyecatch__bg img {
@@ -294,6 +334,19 @@ select::-ms-expand {
 	height: 100%;
 	line-height: 50px;
 	line-height: 3.125rem;
+	position: relative;
+}
+
+.c-header-nav__link:hover.c-header-nav__link::after {
+	background-color: #ffea2e;
+	bottom: 10px;
+	bottom: 0.625rem;
+	content: "";
+	height: 1px;
+	height: 0.0625rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .c-header-nav__btn {
