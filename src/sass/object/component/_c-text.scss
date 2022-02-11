@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.c-text__item {
+  border: rem(1) solid $white;
+  padding: rem(56) rem(10) rem(32);
+  position: relative;
+  @include mq(md) {
+    padding: rem(56) rem(23) rem(32);
+  }
+}
+.c-text__title {
+  font-size: rem(20);
+  font-weight: $regular;
+  padding: rem(8) rem(10);
+  display: inline-block;
+  border: 1px solid $white;
+  border-radius: rem(50);
+  position: absolute;
+  top: rem(-30);
+  left: rem(20);
+}
+.c-text__text {
+  line-height: calc(35 / 16);
+}
