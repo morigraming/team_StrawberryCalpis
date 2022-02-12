@@ -1145,6 +1145,10 @@ select::-ms-expand {
 	white-space: nowrap;
 }
 
+.p-top-slider {
+	width: 100%;
+}
+
 .p-topcontainer {
 	position: relative;
 }
