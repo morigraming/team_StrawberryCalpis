@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-sub-news__list {
+  @include mq("md") {
+    width: rem(860);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.p-sub-news__pagenation {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}

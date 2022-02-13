@@ -1,9 +1,6 @@
 @use "global" as *;
 
 .p-news {
-  @include mq("md") {
-    width: rem(860);
-  }
 }
 
 .p-news__row {

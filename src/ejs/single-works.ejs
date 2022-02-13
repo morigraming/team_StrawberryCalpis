@@ -41,20 +41,20 @@
                             </div>
                             <div class="l-relatedcontents__cards p-relatedcontents__cards">
                                 <div class="p-relatedcontents__card">
-                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
-                                        %>
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。',category:'カテゴリ',
+                                        date:'2020/02/08'}) %>
                                 </div>
                                 <div class="p-relatedcontents__card">
-                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
-                                        %>
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。',category:'カテゴリ',
+                                        date:'2020/02/08'}) %>
                                 </div>
                                 <div class="p-relatedcontents__card">
-                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
-                                        %>
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。',category:'カテゴリ',
+                                        date:'2020/02/08'}) %>
                                 </div>
                                 <div class="p-relatedcontents__card">
-                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'})
-                                        %>
+                                    <%- include('./common/_p-card',{src:'./images/top/blog__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。',category:'カテゴリ',
+                                        date:'2020/02/08'}) %>
                                 </div>
                             </div>
                         </div>
@@ -65,60 +65,6 @@
         </main>
         <%- include('./common/_p-footer') %>
 
-
-            <script>  // メインビュースライダー設定
-                let mySwiper = new Swiper('.p-mainview__slider', {
-                    // オプションの設定
-                    loop: true,  //ループ可能（ループモードを有効に）
-                    effect: 'fade',
-                    autoplay: {
-                        delay: 4000,
-                        disableOnInteraction: false,
-                    },
-
-                });
-            </script>
-
-            <script>// 制作実績スライダー設定
-                //メイン
-                var main = new Swiper('.p-worksslider__main', {
-                    slidesPerView: 1,
-                    centeredSlides: true,
-                    loop: true,
-                    loopedSlides: 8, //スライドの枚数と同じ値を指定
-                    autoplay: {
-                        delay: 4000,
-                        disableOnInteraction: false,
-
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-
-                //サムネイル
-                var thumbnail = new Swiper('.p-worksslider__thumbnail', {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                    loop: true,
-                    loopedSlides: 8,
-                    centeredSlides: true,
-                    slideToClickedSlide: true,
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 8,
-                            spaceBetween: 10,
-                        },
-                    },
-                });
-
-                //4系～
-                //メインとサムネイルを紐づける
-                main.controller.control = thumbnail;
-                thumbnail.controller.control = main;
-
-            </script>
 
     </body>
 
