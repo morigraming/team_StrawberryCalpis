@@ -26,6 +26,16 @@
   display: inline-block;
   height: 100%;
   line-height: rem(50);
+  position: relative;
+}
+.c-header-nav__link:hover.c-header-nav__link::after {
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background-color: $yellow-bg;
+  position: absolute;
+  bottom: rem(10);
+  left: 0;
 }
 .c-header-nav__btn {
   color: $black3;

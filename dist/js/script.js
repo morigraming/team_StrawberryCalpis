@@ -60,6 +60,18 @@ jQuery(function ($) {
   $('.c-pagenation01__item').on('click', function () {
     $('.c-pagenation01__item.current').removeClass('current');
     $(this).addClass('current');
+  }); // トップページ製作実績スライダー(Swiper.js)
+
+  var topSwiper = new Swiper('.p-top-slider__swiper', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000
+    },
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination'
+    }
   });
 }); //Ｓｗｉｐｅｒセッティング
 // メインビュースライダー設定
