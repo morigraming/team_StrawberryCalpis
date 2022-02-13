@@ -8,9 +8,30 @@
   width: 100%;
   max-width: 335px;
   text-align: center;
-}
-@include mq(md) {
-  .c-btn {
-    max-width: 360px;
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+  @include mq(md) {
+      max-width: 360px;
   }
+}
+.c-btn::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+}
+.c-btn:hover {
+  color: $black3;
+}
+.c-btn:hover.c-btn::before {
+  transform: translateX(0);
+  transition: 0.5s ease-in-out;
 }

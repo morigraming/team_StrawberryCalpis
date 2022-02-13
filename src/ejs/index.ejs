@@ -6,17 +6,18 @@
     <%- include('./common/_p-header') %>
       <%- include('./component/_c-section-title') %>
         <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
-          <%- include('./component/_c-page-top-btn') %>
-            <%- include('./common/_p-footer') %>
-              <%- include('./common/_p-mainview') %>
-                <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-                  <% for (var i=0; i < 4; i++) { %>
-                    <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-                      <% } %>
+        <%- include('./common/_p-mainview') %>
+        <%- include('./common/_p-top-content') %>
+        <%- include('./common/_p-top-slider') %>
+        <%- include('./component/_c-single-header') %>
+        <%- include('./component/_c-text',{text:'制作のポイント'}) %>
+        <%- include('./component/_c-table') %>
+        
+        <%- include('./component/_c-page-top-btn') %>
+        <%- include('./common/_p-form') %>
+    <%- include('./common/_p-footer') %>
 
-                        <%- include('./common/_p-footer') %>
-
-                          <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
 
 </html>

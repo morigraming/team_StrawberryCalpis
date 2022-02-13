@@ -1,0 +1,34 @@
+@use "global" as *;
+.p-sub-works {
+  padding: rem(85) 0 rem(120);
+  @include mq("md") {
+    padding: rem(115) 0 rem(127);
+  }
+}
+
+.p-sub-works__contents {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: rem(40);
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: rem(118) rem(48);
+  }
+}
+
+.p-sub-works__card {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  position: relative;
+  @include mq("md") {
+    width: rem(525);
+    margin: 0;
+  }
+}
+
+.p-sub-works__pagenation {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(127);
+  }
+}

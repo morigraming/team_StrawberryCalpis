@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_p-head') %>
+
+    <body>
+
+        <header>
+            <%- include('./common/_p-header') %>
+        </header>
+        <main>
+            <div class="l-eyecatch">
+                <%- include('./component/_c-eyecatch') %>
+            </div>
+            <div class="l-breadcrumbs">
+                <%- include('./component/_c-breadcrumbs',{text:'制作実績'}) %>
+            </div>
+            <section class="p-sub-works">
+                <div class="l-inner">
+                    <div class="p-sub-works__tab l-sub-works__tab">
+                        <%- include('./component/_c-tab') %>
+                    </div>
+                    <div class="p-sub-works__contents">
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                        <div class="p-sub-works__card">
+                            <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                                title:'CodeUps株式会社'}) %>
+                        </div>
+                    </div>
+
+                    <div class="p-sub-works__pagenation l-single-works__pagenation">
+                        <%- include('./component/_c-pagenation') %>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+        <%- include('./common/_p-footer') %>
+
+
+    </body>
+
+</html>
