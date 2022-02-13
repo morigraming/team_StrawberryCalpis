@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_p-head') %>
+
+  <body>
+    <%- include('./common/_p-header') %>
+      <%- include('./component/_c-section-title') %>
+        <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+        <%- include('./common/_p-mainview') %>
+        <%- include('./common/_p-top-content') %>
+        <%- include('./common/_p-top-slider') %>
+        <%- include('./component/_c-single-header') %>
+        <%- include('./component/_c-text',{text:'制作のポイント'}) %>
+        <%- include('./component/_c-table') %>
+        
+        <%- include('./component/_c-page-top-btn') %>
+        <%- include('./common/_p-form') %>
+    <%- include('./common/_p-footer') %>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </body>
+
+</html>
