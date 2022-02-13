@@ -3,11 +3,30 @@
 <%- include('./common/_p-head') %>
 
   <body>
-    <%- include('./common/_p-header') %>
-      <%- include('./component/_c-eyecatch') %>
+    <header>
+      <%- include('./common/_p-header') %>
+    </header>
+    <main>
+      <div class="l-eyecatch">
+        <%- include('./component/_c-eyecatch') %>
+      </div>
+      <div class="l-breadcrumbs">
+        <%- include('./component/_c-breadcrumbs',{text:'お知らせ'}) %>
+      </div>
+      <section class="p-sub-news l-sub-news">
+        <div class="l-inner">
+          <div class="p-sub-news__list">
+            <%- include('./common/_p-news-list') %>
+          </div>
+          <div class="p-sub-news__pagenation">
+            <%- include('./component/_c-pagenation') %>
+          </div>
+        </div>
+      </section>
 
 
-        <%- include('./common/_p-footer') %>
+    </main>
+    <%- include('./common/_p-footer') %>
 
 
 

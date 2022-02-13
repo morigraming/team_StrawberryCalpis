@@ -94,3 +94,58 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 });
 
+
+//Ｓｗｉｐｅｒセッティング
+
+ // メインビュースライダー設定
+let mySwiper = new Swiper('.p-mainview__slider', {
+  // オプションの設定
+  loop: true,  //ループ可能（ループモードを有効に）
+  effect: 'fade',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+
+});
+
+
+// 制作実績スライダー設定
+//メイン
+var main = new Swiper('.p-worksslider__main', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイル
+var thumbnail = new Swiper('.p-worksslider__thumbnail', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+  loopedSlides: 8,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    },
+  },
+});
+
+//4系～
+//メインとサムネイルを紐づける
+main.controller.control = thumbnail;
+thumbnail.controller.control = main;
+
