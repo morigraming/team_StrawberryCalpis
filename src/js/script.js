@@ -79,6 +79,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       el: '.swiper-pagination',
     },
   });
+
+  //お問合せフォーム
+
   
 
   

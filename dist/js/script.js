@@ -72,5 +72,5 @@ jQuery(function ($) {
     pagination: {
       el: '.swiper-pagination'
     }
-  });
+  }); //お問合せフォーム
 });
