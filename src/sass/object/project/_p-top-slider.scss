@@ -3,7 +3,6 @@
 .p-top-slider {
   width: 100%;
   position: relative;
-  margin-bottom: 100px;
   @include mq(md) {
     width: 50.6%;
     max-width: rem(557);
