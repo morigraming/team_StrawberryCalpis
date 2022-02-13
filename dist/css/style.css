@@ -1146,7 +1146,22 @@ select::-ms-expand {
 }
 
 .p-top-slider {
+	margin-bottom: 100px;
+	position: relative;
 	width: 100%;
+}
+
+.p-top-slider .swiper-pagination {
+	bottom: -27px;
+	position: absolute;
+}
+
+.p-top-slider .swiper-pagination-bullet {
+	background-color: #c4c4c4;
+}
+
+.p-top-slider .swiper-pagination-bullet-active {
+	background-color: #f9f871;
 }
 
 .p-topcontainer {
@@ -1705,6 +1720,11 @@ a:hover {
 
 .p-top-content__text {
 	font-size: 1.5625rem;
+}
+
+.p-top-slider {
+	max-width: 34.8125rem;
+	width: 50.6%;
 }
 
 .p-topcontainer__bg {

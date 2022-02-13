@@ -38,9 +38,8 @@ jQuery(function ($) {
   $('.navbar_toggle').on('click', function () {
     $(this).toggleClass('js-open');
     $('.menu').toggleClass('js-open');
-  }); 
-  
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+  }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;
     var header = $('header').innerHeight();
@@ -51,17 +50,27 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
-  }); 
+  }); // ブログページのタブ
 
-  // ブログページのタブ
   $('.c-tab__item').on('click', function () {
     $('.c-tab__item.is-active').removeClass('is-active');
     $(this).addClass('is-active');
-  }); 
+  }); //ページネーション01
 
-  //ページネーション01
   $('.c-pagenation01__item').on('click', function () {
     $('.c-pagenation01__item.current').removeClass('current');
     $(this).addClass('current');
+  }); // トップページ製作実績スライダー(Swiper.js)
+
+  var topSwiper = new Swiper('.p-top-slider__swiper', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000
+    },
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination'
+    }
   });
 });
