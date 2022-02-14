@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_p-head') %>
+
+  <body>
+    <header>
+      <%- include('./common/_p-header') %>
+    </header>
+    <main>
+      <div class="l-eyecatch">
+        <%- include('./component/_c-eyecatch') %>
+      </div>
+      <div class="l-breadcrumbs">
+        <%- include('./component/_c-breadcrumbs',{text:'企業概要'}) %>
+      </div>
+      <section class="p-sub-company l-sub-company">
+        <div class="l-inner">
+          <div class="p-sub-company__table">
+            <%- include('./component/_c-table') %>
+          </div>
+          <div class="p-sub-company__map">
+            <%- include('./component/_c-map') %>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-contactarea">
+        <%- include('./common/_p-contactarea') %>
+      </section>
+    </main>
+    <%- include('./common/_p-footer') %>
+
+
+
+
+
+  </body>
+
+</html>
