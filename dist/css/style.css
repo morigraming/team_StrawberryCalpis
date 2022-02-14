@@ -438,12 +438,11 @@ select::-ms-expand {
 
 .c-nav__link::after {
 	background: #ffea2e;
-	bottom: 9px;
-	bottom: 0.5625rem;
+	bottom: 0;
 	content: "";
 	height: 1px;
 	height: 0.0625rem;
-	left: 0; /*絶対配置で線の位置を決める*/
+	left: calc(50% - 50px); /*絶対配置で線の位置を決める*/
 	position: absolute;
 	-webkit-transform: scale(0, 1);
 	transform: scale(0, 1); /*X方向0、Y方向1*/
@@ -451,7 +450,7 @@ select::-ms-expand {
 	transform-origin: left top; /*アニメーションの指定*/
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s; /*線の形状*/
-	width: 100%; /*左上基点*/
+	width: 100px; /*左上基点*/
 }
 
 .c-nav__link:hover::after {
@@ -735,11 +734,6 @@ select::-ms-expand {
 	line-height: 2.1875;
 }
 
-.l-footer {
-	padding: 48px 0;
-	padding: 3rem 0;
-}
-
 .l-header {
 	padding: 0 22px 0 20px;
 	padding: 0 1.375rem 0 1.25rem;
@@ -879,8 +873,29 @@ select::-ms-expand {
 	opacity: 0.8;
 }
 
+.p-contactarea {
+	background-color: #3d3d3d;
+	padding: 67px 0 64px;
+	padding: 4.1875rem 0 4rem;
+}
+
+.p-contactarea__text {
+	margin-top: 20px;
+	margin-top: 1.25rem;
+	text-align: left;
+	width: 100%;
+}
+
+.p-contactarea__btn {
+	margin-top: 40px;
+	margin-top: 2.5rem;
+	width: 100%;
+}
+
 .p-footer {
 	background-color: #111;
+	padding: 48px 0;
+	padding: 3rem 0;
 }
 
 .p-footer__logo {
@@ -1592,6 +1607,7 @@ a:hover {
 }
 
 .c-nav__link::after {
+	left: 0;
 	width: 100%;
 }
 
@@ -1660,10 +1676,6 @@ a:hover {
 	padding: 3.5rem 1.4375rem 2rem;
 }
 
-.l-footer {
-	padding: 2rem 0 1.625rem 0;
-}
-
 .l-header {
 	padding-left: 2rem;
 	padding-right: 0;
@@ -1702,6 +1714,26 @@ a:hover {
 	margin-top: 3rem;
 }
 
+.p-contactarea {
+	padding: 9.25rem 0 9.375rem;
+}
+
+.p-contactarea__text {
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.p-contactarea__btn {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.75rem;
+	width: 22.5rem;
+}
+
+.p-footer {
+	padding: 2rem 0 1.625rem 0;
+}
+
 .p-footer__contents {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1721,7 +1753,7 @@ a:hover {
 
 .p-footer__copyright {
 	font-size: 0.9375rem;
-	margin-top: 4.0625rem;
+	margin-top: 4.6875rem;
 }
 
 .p-form__list {
