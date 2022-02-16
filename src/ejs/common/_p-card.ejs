@@ -1,22 +1,37 @@
-<div class="p-card">
-    <div class="p-card__img">
-        <img src="<%= src %>" alt="">
-    </div>
-    <div class="p-card__contents">
-        <h3 class="p-card__title">
-            <%= title %>
-        </h3>
+<!-- データリスト -->
+<!--ブログの内容をここで書く！-->
+<% const blogLists=[ {src:'images/works/works-img02.jpg', title:'CodeUps株式会社',
+    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。', category:'カテゴリ',date:'2022/02/11'},
+    {src:'images/works/works-img02.jpg', title:'CodeUps株式会社',
+    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。', category:'カテゴリ',date:'2022/02/12'},
+    {src:'images/works/works-img02.jpg', title:'CodeUps株式会社',
+    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。', category:'カテゴリ',date:'2022/02/13'},
+    {src:'images/works/works-img02.jpg', title:'CodeUps株式会社',
+    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。', category:'カテゴリ',date:'2022/02/14'}, ] %>
 
-        <p class="p-card__text">
-            <%= text %>
-        </p>
-        <div class="p-card__meta">
-            <p class="p-card__category"><a href="" class="">
-                    <%= category %>
-                </a></p>
-            <p class="p-card__date">
-                <%= date %>
-            </p>
+
+    <% for (var blogList of blogLists) { %>
+        <div class="p-card">
+
+            <div class="p-card__img">
+                <img src="<%= blogList.src %>" alt="">
+            </div>
+            <div class="p-card__contents">
+                <h3 class="p-card__title">
+                    <%= blogList.title %>
+                </h3>
+
+                <p class="p-card__text">
+                    <%= blogList.text %>
+                </p>
+                <div class="p-card__meta">
+                    <p class="p-card__category"><a href="" class="">
+                            <%= blogList.category %>
+                        </a></p>
+                    <p class="p-card__date">
+                        <%= blogList.date %>
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        <%}%>
