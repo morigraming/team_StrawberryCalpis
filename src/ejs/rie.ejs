@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <%- include('./common/_p-head') %>
 
   <body>
@@ -12,38 +13,75 @@
           <h3 class="rietest__partstitle">パンくず:c-breadcrumbs</h3>
           <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
             <div class="l-inner">
+              <div class="l-cards">
+                <!-- データリスト -->
+                <!--ブログの内容をここで書く！-->
+                <% const blogLists=[{src:'./images/works/works__img01.jpeg', title:'CodeUps株式会社',
+                  text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ1',date:'2022/02/11'},{src:'./images/works/works__img02.jpeg', title:'CodeUps2株式会社',
+                  text:'2テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ2',date:'2022/02/12'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
+                  text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
+                  text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
+                  text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
+                  text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
+                  text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                  category:'カテゴリ3',date:'2022/02/13'}]%>
+                  <%- include('./common/_p-cards', {blogLists, column:'3'}) %>
+              </div>
 
-              <h3 class="rietest__partstitle">カード:p-card, p-card</h3>
-              <%-
-                include('./common/_p-card',{src:'./images/works/works__img01.jpeg',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',category:'カテゴリ',
-                date:'2020/02/08'}) %>
-                <h3 class="rietest__partstitle">関連記事タイトル:c-relatedtitle</h3>
-                <%- include('./component/_c-relatedtitle') %>
-                  <h3 class="rietest__partstitle">制作実績カード:p-workscard</h3>
-                  <%- include('./common/_p-workscard',{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
-                    title:'CodeUps株式会社'}) %>
-                    <h3 class="rietest__partstitle">ページネーション（一覧）:c-pagenation02</h3>
-                    <%- include('./component/_c-pagenation02',{text:'事業内容'}) %>
-                      <h3 class="rietest__partstitle">gogleマップ:c-map</h3>
-                      <%- include('./component/_c-map') %>
-                        <h3 class="rietest__partstitle">お知らせ:p-news-list</h3>
-                        <%- include('./common/_p-news-list') %>
+              <h3 class="rietest__partstitle">関連記事タイトル:c-relatedtitle</h3>
+              <%- include('./component/_c-relatedtitle') %>
+                <h3 class="rietest__partstitle">制作実績カード:p-workscard</h3>
+                <% const worksLists=[{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社1'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社2'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社3'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社4'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社5'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社6'},{src:'./images/works/works__img01.jpeg',category:'カテゴリ',
+                  title:'CodeUps株式会社7'}]%>
+
+                  <% worksLists.forEach(function(worksList){ %>
+                    <div class="p-sub-works__card">
+                      <%- include('./common/_p-workscard',{worksList}) %>
+                    </div>
+                    <% }); %>
+                      <h3 class="rietest__partstitle">ページネーション（一覧）:c-pagenation02</h3>
+                      <%- include('./component/_c-pagenation02',{text:'事業内容'}) %>
+                        <h3 class="rietest__partstitle">gogleマップ:c-map</h3>
+                        <%- include('./component/_c-map') %>
+                          <h3 class="rietest__partstitle">お知らせ:p-news-list</h3>
+                          <%- include('./common/_p-news-list') %>
 
 
-                          <h3 class="rietest__partstitle">制作実績スライダー:p-worksslider</h3>
-                          <div class="p-singleworks__slider rietest__slider">
-                            <%-
-                              include('./common/_p-worksslider',{src1:'./images/works/works__img01.jpeg',src2:'./images/works/works__img02.jpeg',src3:'./images/works/works__img03.jpeg',src4:'./images/works/works__img04.jpeg',src5:'./images/works/works__img01.jpeg',src6:'./images/works/works__img02.jpeg',src7:'./images/works/works__img03.jpeg',src8:'./images/works/works__img04.jpeg'})
-                              %>
-                          </div>
+                            <h3 class="rietest__partstitle">制作実績スライダー:p-worksslider</h3>
+                            <div class="p-singleworks__slider rietest__slider">
+                              <%-
+                                include('./common/_p-worksslider',{src1:'./images/works/works__img01.jpeg',src2:'./images/works/works__img02.jpeg',src3:'./images/works/works__img03.jpeg',src4:'./images/works/works__img04.jpeg',src5:'./images/works/works__img01.jpeg',src6:'./images/works/works__img02.jpeg',src7:'./images/works/works__img03.jpeg',src8:'./images/works/works__img04.jpeg'})
+                                %>
+                            </div>
 
             </div>
             <h3 class="rietest__partstitle">トップページコンテンツ横並び:p-topcontainer</h3>
-            <%- include('./common/_p-topcontainer', {src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
-              text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
-              %>
-              <h3 class="rietest__partstitle">スマホメニュー:p-modal</h3>
-              <%- include('./common/_p-modal') %>
+            <div class="l-topcontainer">
+              <%- include('./common/_p-topcontainer', {modifier:'',
+                src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
+                text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+                %>
+            </div>
+            <div class="l-topcontainer">
+              <%- include('./common/_p-topcontainer', {modifier:'p-topcontainer--rev',
+                src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
+                text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+                %>
+            </div>
+            <h3 class="rietest__partstitle">スマホメニュー:p-modal</h3>
+            <%- include('./common/_p-modal') %>
 
 
 

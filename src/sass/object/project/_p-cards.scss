@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.p-cards {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cards__card--3 {
+  @include mq("md") {
+    width: rem(350);
+    margin-left: rem(25);
+  }
+}
+
+.p-cards__card--3:nth-child(3n + 1) {
+  @include mq("md") {
+    margin-left: rem(0);
+  }
+}
+
+.p-cards__card--3:nth-child(n + 4) {
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.p-cards__card--4 {
+  @include mq("md") {
+    width: rem(251);
+    margin-left: rem(32);
+  }
+}
+
+.p-cards__card--4:nth-child(4n + 1) {
+  @include mq("md") {
+    margin-left: rem(0);
+  }
+}

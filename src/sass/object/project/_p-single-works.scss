@@ -22,10 +22,16 @@
     margin-top: rem(32);
   }
 }
-.p-single-works__content {
-  margin-top: rem(32);
+.p-single-works__contents {
+  margin-top: rem(56);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(103);
+  }
+}
+.p-single-works__content {
+  margin-top: rem(54);
+  @include mq("md") {
+    margin-top: rem(71);
   }
 }
 .p-single-works__pagenation {
