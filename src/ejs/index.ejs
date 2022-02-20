@@ -15,15 +15,22 @@
           <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
         </div>
       </section>
-      <%- include('./component/_c-section-title') %>
+
+
+      <%- include('./component/_c-section-title',{text:'事業内容'}) %>
+      <%- include('./project/_p-top-content') %>
+      <%- include('./component/_c-section-title',{text:'製作実績'}) %>
+      <%- include('./project/_p-top-slider') %>
+      <%- include('./component/_c-section-title',{text:'企業概要'}) %>
+      <%- include('./component/_c-section-title',{text:'ブログ'}) %>
       
 
-      <%- include('./project/_p-top-content') %>
-      <%- include('./project/_p-top-slider') %>
-      <%- include('./component/_c-single-header') %>
-      <%- include('./component/_c-text',{text:'制作のポイント'}) %>
-      <%- include('./component/_c-table') %>
-      
+
+      <section class="l-contactarea">
+        <div class="inner">
+          <%- include('./project/_p-contactarea') %>
+        </div>
+      </section>
       <%- include('./component/_c-page-top-btn') %>
     </main>
     <footer>
