@@ -3,18 +3,35 @@
 <%- include('./project/_p-head') %>
 
   <body>
-    <%- include('./project/_p-header') %>
-      <%- include('./component/_c-eyecatch') %>
-        <%- include('./component/_c-tab') %>
+    <header>
+      <%- include('./project/_p-header') %>
+    </header>
+    <main>
+      <section class="l-eyecatch">
+        <%- include('./component/_c-eyecatch',{text:'ブログ'}) %>
+      </section>
+      <section class="l-breadcrumbs">
+        <%- include('./component/_c-breadcrumbs',{text:'ブログ'}) %>
+      </section>
+      <section class="l-c-tab">
+        <div class="l-inner">
+          <%- include('./component/_c-tab') %>
+        </div>
+      </section>
+
+      <section class="l-pagenation">
+        <div class="inner">
           <%- include('./component/_c-pagenation') %>
-
-
-            <%- include('./project/_p-footer') %>
-
-
-
-
-
+        </div>
+      </section>
+      <section class="l-contactarea">
+        <div class="inner">
+          <%- include('./project/_p-contactarea') %>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <%- include('./project/_p-footer') %>
+    </footer>
   </body>
-
 </html>

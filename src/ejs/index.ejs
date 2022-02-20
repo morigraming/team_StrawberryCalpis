@@ -9,10 +9,15 @@
       <section class="l-mainview">
         <%- include('./project/_p-mainview') %>
       </section>
+      <section class="l-news-list">
+        <div class="l-inner">
+          <%- include('./project/_p-news-list') %>
+          <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+        </div>
+      </section>
       <%- include('./component/_c-section-title') %>
       
 
-      <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
       <%- include('./project/_p-top-content') %>
       <%- include('./project/_p-top-slider') %>
       <%- include('./component/_c-single-header') %>
@@ -20,7 +25,6 @@
       <%- include('./component/_c-table') %>
       
       <%- include('./component/_c-page-top-btn') %>
-      <%- include('./project/_p-form') %>
     </main>
     <footer>
       <%- include('./project/_p-footer') %>

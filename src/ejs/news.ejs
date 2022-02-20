@@ -8,7 +8,7 @@
     </header>
     <main>
       <div class="l-eyecatch">
-        <%- include('./component/_c-eyecatch') %>
+        <%- include('./component/_c-eyecatch',{text:'お知らせ'}) %>
       </div>
       <div class="l-breadcrumbs">
         <%- include('./component/_c-breadcrumbs',{text:'お知らせ'}) %>
@@ -16,7 +16,11 @@
       <div class="p-sub-news l-sub-news">
         <div class="l-inner">
           <div class="p-sub-news__list">
-            <%- include('./project/_p-news-list') %>
+            <% var counter = 1; %>
+            <% while (counter <= 10) { %>
+              <%- include('./project/_p-news-list') %>
+            <% counter++; %>
+            <% } %>
           </div>
           <div class="p-sub-news__pagenation">
             <%- include('./component/_c-pagenation') %>

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-pagenation {
+  margin-top: rem(80);
+  padding-bottom: rem(120);
+  @include mq("md") {
+    margin-top: rem(104);
+    padding-bottom: rem(150);
+  }
+}

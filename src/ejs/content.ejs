@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./project/_p-head') %>
-
   <body>
-    <%- include('./project/_p-header') %>
-      <%- include('./component/_c-eyecatch') %>
-        <%- include('./component/_c-text-with-img') %>
-
-
-
-
-          <%- include('./project/_p-footer') %>
+    <header>
+      <%- include('./project/_p-header') %>
+    </header>
+    <main>
+      <section>
+        <%- include('./component/_c-eyecatch',{text:'事業内容'}) %>
+      </section>
+      <section class="l-breadcrumbs">
+        <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
+      </section>
+      <div class="l-sub-content">
+        <% var counter = 1; %>
+        <% while (counter <= 3) { %>
+          <%- include('./component/_c-text-with-img') %>
+        <% counter++; %>
+        <% } %>
+      </div>
+      
+      
+      
+    </main>
+    <footer>
+      <%- include('./project/_p-footer') %>
+    </footer>
 
 
 

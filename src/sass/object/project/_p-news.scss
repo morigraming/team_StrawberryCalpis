@@ -9,9 +9,6 @@
     align-items: flex-start;
   }
 }
-.p-news__row:not(:first-child) {
-  margin-top: rem(32);
-}
 
 .p-news__meta {
   display: flex;
