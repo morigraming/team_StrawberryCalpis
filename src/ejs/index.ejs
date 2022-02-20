@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_p-head') %>
-
+  <%- include('./project/_p-head') %>
   <body>
-    <%- include('./common/_p-header') %>
+    <header>
+      <%- include('./project/_p-header') %>
+    </header>
+    <main>
+      <section class="l-mainview">
+        <%- include('./project/_p-mainview') %>
+      </section>
       <%- include('./component/_c-section-title') %>
-        <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
-        <%- include('./common/_p-mainview') %>
-        <%- include('./common/_p-top-content') %>
-        <%- include('./common/_p-top-slider') %>
-        <%- include('./component/_c-single-header') %>
-        <%- include('./component/_c-text',{text:'制作のポイント'}) %>
-        <%- include('./component/_c-table') %>
-        
-        <%- include('./component/_c-page-top-btn') %>
-        <%- include('./common/_p-form') %>
-    <%- include('./common/_p-footer') %>
+      
+
+      <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+      <%- include('./project/_p-top-content') %>
+      <%- include('./project/_p-top-slider') %>
+      <%- include('./component/_c-single-header') %>
+      <%- include('./component/_c-text',{text:'制作のポイント'}) %>
+      <%- include('./component/_c-table') %>
+      
+      <%- include('./component/_c-page-top-btn') %>
+      <%- include('./project/_p-form') %>
+    </main>
+    <footer>
+      <%- include('./project/_p-footer') %>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>

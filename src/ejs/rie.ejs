@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<%- include('./common/_p-head') %>
+<%- include('./project/_p-head') %>
 
   <body>
 
-    <%- include('./common/_p-header') %>
+    <%- include('./project/_p-header') %>
       <section class="rietest">
         <h2>リエ作成パーツ表示確認用ページです!</h2>
         <h3 class="rietest__partstitle">メインビュー:p-mainview</h3>
-        <%- include('./common/_p-mainview') %>
+        <%- include('./project/_p-mainview') %>
           <h3 class="rietest__partstitle">パンくず:c-breadcrumbs</h3>
           <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
             <div class="l-inner">
@@ -31,7 +31,7 @@
                   category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
                   text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
                   category:'カテゴリ3',date:'2022/02/13'}]%>
-                  <%- include('./common/_p-cards', {blogLists, column:'3'}) %>
+                  <%- include('./project/_p-cards', {blogLists, column:'3'}) %>
               </div>
 
               <h3 class="rietest__partstitle">関連記事タイトル:c-relatedtitle</h3>
@@ -48,7 +48,7 @@
 
                   <% worksLists.forEach(function(worksList){ %>
                     <div class="p-sub-works__card">
-                      <%- include('./common/_p-workscard',{worksList}) %>
+                      <%- include('./project/_p-workscard',{worksList}) %>
                     </div>
                     <% }); %>
                       <h3 class="rietest__partstitle">ページネーション（一覧）:c-pagenation02</h3>
@@ -56,38 +56,38 @@
                         <h3 class="rietest__partstitle">gogleマップ:c-map</h3>
                         <%- include('./component/_c-map') %>
                           <h3 class="rietest__partstitle">お知らせ:p-news-list</h3>
-                          <%- include('./common/_p-news-list') %>
+                          <%- include('./project/_p-news-list') %>
 
 
                             <h3 class="rietest__partstitle">制作実績スライダー:p-worksslider</h3>
                             <div class="p-singleworks__slider rietest__slider">
                               <%-
-                                include('./common/_p-worksslider',{src1:'./images/works/works__img01.jpeg',src2:'./images/works/works__img02.jpeg',src3:'./images/works/works__img03.jpeg',src4:'./images/works/works__img04.jpeg',src5:'./images/works/works__img01.jpeg',src6:'./images/works/works__img02.jpeg',src7:'./images/works/works__img03.jpeg',src8:'./images/works/works__img04.jpeg'})
+                                include('./project/_p-worksslider',{src1:'./images/works/works__img01.jpeg',src2:'./images/works/works__img02.jpeg',src3:'./images/works/works__img03.jpeg',src4:'./images/works/works__img04.jpeg',src5:'./images/works/works__img01.jpeg',src6:'./images/works/works__img02.jpeg',src7:'./images/works/works__img03.jpeg',src8:'./images/works/works__img04.jpeg'})
                                 %>
                             </div>
 
             </div>
             <h3 class="rietest__partstitle">トップページコンテンツ横並び:p-topcontainer</h3>
             <div class="l-topcontainer">
-              <%- include('./common/_p-topcontainer', {modifier:'',
+              <%- include('./project/_p-topcontainer', {modifier:'',
                 src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
                 text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
                 %>
             </div>
             <div class="l-topcontainer">
-              <%- include('./common/_p-topcontainer', {modifier:'p-topcontainer--rev',
+              <%- include('./project/_p-topcontainer', {modifier:'p-topcontainer--rev',
                 src:'./images/top/topcontainer__img01.jpeg',title:'メインタイトルが入ります',
                 text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
                 %>
             </div>
             <h3 class="rietest__partstitle">スマホメニュー:p-modal</h3>
-            <%- include('./common/_p-modal') %>
+            <%- include('./project/_p-modal') %>
 
 
 
 
       </section>
-      <%- include('./common/_p-footer') %>
+      <%- include('./project/_p-footer') %>
 
 
 

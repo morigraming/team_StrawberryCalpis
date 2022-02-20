@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_p-head') %>
+<%- include('./project/_p-head') %>
 
     <body>
         <header>
-            <%- include('./common/_p-header') %>
+            <%- include('./project/_p-header') %>
         </header>
         <main>
             <div class="l-eyecatch">
@@ -30,7 +30,7 @@
 
                             <% worksLists.forEach(function(worksList){ %>
                                 <div class="p-sub-works__card">
-                                    <%- include('./common/_p-workscard',{worksList}) %>
+                                    <%- include('./project/_p-workscard',{worksList}) %>
                                 </div>
                                 <% }); %>
                     </div>
@@ -43,10 +43,10 @@
 
             </div>
             <div class="l-contactarea">
-                <%- include('./common/_p-contactarea') %>
+                <%- include('./project/_p-contactarea') %>
             </div>
         </main>
-        <%- include('./common/_p-footer') %>
+        <%- include('./project/_p-footer') %>
 
     </body>
 
