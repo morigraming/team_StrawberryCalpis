@@ -10,19 +10,32 @@
         <%- include('./project/_p-mainview') %>
       </section>
       <section class="l-news-list">
-        <div class="l-inner">
-          <%- include('./project/_p-news-list') %>
+        <%- include('./project/_p-top-news-list') %>
+      </section>
+      
+      <section class="l-content">
+        <%- include('./project/_p-top-content') %>
+      </section>
+      <section class="l-works">
+        <div class="inner">
+          <%- include('./component/_c-section-title',{secTitle:'製作実績'}) %>
+          <%- include('./project/_p-top-slider') %>
           <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
         </div>
       </section>
+      <section class="l-overview">
+        <div class="inner">
+          <%- include('./component/_c-section-title',{secTitle:'企業概要'}) %>
 
-
-      <%- include('./component/_c-section-title',{text:'事業内容'}) %>
-      <%- include('./project/_p-top-content') %>
-      <%- include('./component/_c-section-title',{text:'製作実績'}) %>
-      <%- include('./project/_p-top-slider') %>
-      <%- include('./component/_c-section-title',{text:'企業概要'}) %>
-      <%- include('./component/_c-section-title',{text:'ブログ'}) %>
+          <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+        </div>
+      </section>
+      <section class="l-blog">
+        <div class="inner">
+          <%- include('./component/_c-section-title',{secTitle:'ブログ'}) %>
+          <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+        </div>
+      </section>
       
 
 
