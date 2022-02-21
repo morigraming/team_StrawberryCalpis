@@ -1,25 +1,22 @@
 @use 'global' as *;
 
-.p-top-content {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
 .p-top-content__content {
   margin-top: rem(40);
   height: rem(168);
+  display: flex;
+  flex-wrap: wrap;
   @include mq(md) {
     height: rem(320);
   }
 }
 .p-top-content__item {
   display: inline-block;
-  width: 49%;
+  width: 50%;
   // height: rem(168);
   position: relative;
   transition: .5s;
   @include mq(md) {
-    width: 24%;
+    width: 25%;
     // height: rem(320);
   }
 }

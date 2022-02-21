@@ -10,7 +10,7 @@
     text:'4テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。', category:'カテゴリ4',date:'2022/02/14'}]%>
 
     <!--呼び出し時の書き方,columnは、3カラムか４カラムか。（＃は削除してください！）-->
-    <%#- include('./common/_p-cards', {blogLists, column:'4'}) %>
+    <%#- include('./project/_p-cards', {blogLists, column:'4'}) %>
 
 
 
@@ -20,7 +20,7 @@
         <div class="p-cards">
             <% blogLists.forEach(function(blogList){ %>
                 <div class="p-cards__card p-cards__card--<%= column %>">
-                    <%- include('../common/_p-card', {blogList,column}) %>
+                    <%- include('../project/_p-card', {blogList,column}) %>
                 </div>
                 <% }); %>
         </div>
