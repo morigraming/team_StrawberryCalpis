@@ -2,12 +2,8 @@
 
 .p-top-content__content {
   margin-top: rem(40);
-  height: rem(168);
   display: flex;
   flex-wrap: wrap;
-  @include mq(md) {
-    height: rem(320);
-  }
 }
 .p-top-content__item {
   display: inline-block;

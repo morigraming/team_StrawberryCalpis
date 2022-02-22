@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .l-works {
-  margin-top: 150px;
+  margin-top: rem(70);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
 }
