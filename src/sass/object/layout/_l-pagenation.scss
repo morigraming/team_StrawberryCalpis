@@ -2,9 +2,9 @@
 
 .l-pagenation {
   margin-top: rem(80);
-  padding-bottom: rem(120);
+  margin-bottom: rem(120);
   @include mq("md") {
     margin-top: rem(104);
-    padding-bottom: rem(150);
+    margin-bottom: rem(150);
   }
 }
