@@ -2,7 +2,6 @@
 
 .p-top-overview {
   max-width: rem(1100);
-  overflow: hidden;
 }
 .p-top-overview__content {
   margin-top: rem(48);
@@ -10,15 +9,18 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  
   }
 }
 .p-top-overview__img {
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   position: relative;
   @include mq(md) {
     width: 50.6%;
     min-width: rem(557);
     margin-left: rem(32);
+    margin-right: 0;
   }
 }
 

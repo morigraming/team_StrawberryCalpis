@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.p-top-content {
+  // overflow: hidden;
+}
+
 .p-top-content__section-title {
   max-width: rem(1100);
   margin: 0 auto;
@@ -8,6 +12,8 @@
   margin-top: rem(40);
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 .p-top-content__item {
   display: inline-block;

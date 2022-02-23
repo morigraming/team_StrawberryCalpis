@@ -11,10 +11,8 @@
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0 auto;
   @include mq(md) {
       max-width: 360px;
-      margin-left: 0;
   }
 }
 .c-btn::before {

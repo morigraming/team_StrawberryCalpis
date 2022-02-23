@@ -2,7 +2,6 @@
 
 .p-top-works {
   max-width: rem(1100);
-  overflow: hidden;
 }
 .p-top-works__content {
   margin-top: rem(48);
@@ -12,10 +11,12 @@
   }
 }
 .p-top-works__slider {
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   @include mq(md) {
     width: 50.6%;
     min-width: rem(557);
+    margin-left: 0;
     margin-right: rem(32);
   }
 }
