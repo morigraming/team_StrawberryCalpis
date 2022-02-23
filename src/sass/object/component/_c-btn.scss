@@ -11,6 +11,7 @@
   position: relative;
   display: block;
   overflow: hidden;
+  // margin: 0 auto;
   @include mq(md) {
       max-width: 360px;
   }

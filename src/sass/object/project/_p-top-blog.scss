@@ -4,8 +4,14 @@
 
 }
 .top-blog__content {
-
+  margin-top: rem(54);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
 }
 .top-blog__btn {
-  margin: 0 auto;
+  margin: rem(24) auto rem(120);
+  @include mq(md) {
+    margin: rem(48) auto rem(150);
+  }
 }
