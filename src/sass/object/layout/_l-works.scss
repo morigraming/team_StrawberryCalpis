@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .l-works {
-  margin-top: rem(70);
+  padding-top: rem(70);
+  overflow: hidden;
   @include mq(md) {
     margin-top: rem(150);
   }

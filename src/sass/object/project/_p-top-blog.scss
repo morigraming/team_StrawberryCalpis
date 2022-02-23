@@ -1,17 +1,21 @@
 @use "global" as *;
 
-.top-blog__section-title {
+.p-top-blog__section-title {
 
 }
-.top-blog__content {
+.p-top-blog__content {
   margin-top: rem(54);
   @include mq(md) {
     margin-top: rem(48);
   }
 }
-.top-blog__btn {
+.p-top-blog__btn {
   margin: rem(24) auto rem(120);
   @include mq(md) {
     margin: rem(48) auto rem(150);
   }
+}
+
+.p-top-blog__btn .c-btn {
+  margin: 0 auto;
 }

@@ -63,5 +63,11 @@
   @include mq(md) {
     margin-top: rem(48);
   }
+}
 
+.p-top-overview__btn .c-btn {
+  margin: 0 auto;
+  @include mq(md) {
+    margin-left: 0;
+  }
 }
