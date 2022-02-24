@@ -3,6 +3,7 @@
 .p-footer {
   background-color: $black;
   padding: rem(48) 0;
+
   @include mq("md") {
     padding: rem(32) 0 rem(26) 0;
   }
