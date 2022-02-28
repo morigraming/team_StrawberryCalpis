@@ -1,0 +1,31 @@
+<section class="p-single-works">
+    <div class="l-inner">
+        <div class="p-single-works__inner">
+            <h3 class="p-single-works__title">〇〇株式会社様 制作実績</h3>
+            <div class="p-single-works__meta l-single-works__meta">
+                <%- include('../component/_c-meta',{date:'2022/02/08',category:'カテゴリ3'}) %>
+            </div>
+            <div class="p-single-works__slider">
+                <%- include('../project/_p-worksslider',{src1:'../images/works/works__img01.jpeg',src2:'../images/works/works__img02.jpeg',src3:'../images/works/works__img03.jpeg',src4:'../images/works/works__img04.jpeg',src5:'../images/works/works__img01.jpeg',src6:'../images/works/works__img02.jpeg',src7:'../images/works/works__img03.jpeg',src8:'../images/works/works__img04.jpeg'})
+                    %>
+            </div>
+            <div class="p-single-works__contents">
+                <div class="p-single-works__content">
+                    <%- include('../component/_c-text',{text:'制作のポイント'}) %>
+                </div>
+                <div class="p-single-works__content">
+                    <%- include('../component/_c-text',{text:'デザインのポイント'}) %>
+                </div>
+                <div class="p-single-works__content">
+                    <%- include('../component/_c-text',{text:'その他'}) %>
+                </div>
+            </div>
+
+            <div class="p-single-works__pagenation l-single-works__pagenation">
+                <%- include('../component/_c-pagenation02',{text:'事業内容'}) %>
+            </div>
+        </div>
+
+    </div>
+
+</section>
