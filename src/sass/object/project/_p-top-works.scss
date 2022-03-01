@@ -8,6 +8,7 @@
   @include mq(md) {
     display: flex;
     align-items: center;
+    background: linear-gradient(90deg,  transparent 0%,  transparent 25%, $black3 25%, $black3 100%);
   }
 }
 .p-top-works__slider {
@@ -21,11 +22,15 @@
   }
 }
 .p-top-works__text-box {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
+  padding: rem(20);
+  background-color: $black3;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   @include mq(md) {
+    background-color: initial;
     padding-top: rem(120);
     padding-bottom: rem(120);
+    margin: 0;
   }
 }
 .p-top-works__title {

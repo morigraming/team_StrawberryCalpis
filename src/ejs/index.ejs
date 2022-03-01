@@ -12,22 +12,24 @@
       <section class="l-news-list">
         <%- include('./project/_p-top-news-list') %>
       </section>
-      <section class="l-content">
-        <%- include('./project/_p-top-content') %>
-      </section>
-      <section class="l-works">
-        <%- include('./project/_p-top-works') %>
-      </section>
-      <section class="l-overview">
-        <%- include('./project/_p-top-overview') %>
-      </section>
-      <section class="l-blog">
-        <%- include('./project/_p-top-blog') %>
-      </section>
+      <div class="p-background-liner p-background-liner1">
+        <section class="l-content">
+          <%- include('./project/_p-top-content') %>
+        </section>
+        <section class="l-works">
+          <%- include('./project/_p-top-works') %>
+        </section>
+      </div>
+      <div class="p-background-liner p-background-liner2">
+        <section class="l-overview">
+          <%- include('./project/_p-top-overview') %>    
+        </section>
+        <section class="l-blog">
+          <%- include('./project/_p-top-blog') %>
+        </section>
+      </div>
       <section class="l-contactarea">
-        <div class="l-inner">
-          <%- include('./project/_p-contactarea') %>
-        </div>
+        <%- include('./project/_p-contactarea') %>
       </section>
       <%- include('./component/_c-page-top-btn') %>
     </main>

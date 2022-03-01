@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-  
+    background: linear-gradient(90deg, $black3 0%,  $black3 75%, transparent 75%, transparent 100%);
   }
 }
 .p-top-overview__img {
@@ -39,11 +39,15 @@
   left: 0;
 }
 .p-top-overview__text-box {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
+  padding: rem(20);
+  background-color: $black3;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   @include mq(md) {
     padding-top: rem(120);
     padding-bottom: rem(120);
+    margin: 0;
+    background-color: initial;
   }
 }
 .p-top-overview__title {

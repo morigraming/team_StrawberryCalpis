@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.p-background-liner {
+  position: relative;
+}
+.p-background-liner::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #F9F871;
+  z-index: -2;
+}
+.p-background-liner1::after {
+  left: 0;
+  top: 7.625rem;
+  transform: skewY(61.09deg);
+  transform-origin: top left;
+  @include mq(md) {
+    transform: skewY(45deg);
+  }
+}
+.p-background-liner2::after {
+  right: rem(140);
+  top: 0;
+  transform: skewY(-75deg);
+  transform-origin: top right;
+  @include mq(md) {
+    right: rem(300);
+    top: rem(-270);
+    transform: skewY(-57deg);
+  
+  }
+  
+}

@@ -1,6 +1,6 @@
 @use "global" as *;
 
 .l-content {
-  padding-top: 150px;
+  padding-top: rem(150);
   overflow: hidden;
 }
