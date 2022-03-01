@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-page-title {
+  font-size: rem(30);
+  letter-spacing: 0.002em;
+  font-weight: $bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}

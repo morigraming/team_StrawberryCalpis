@@ -1,5 +1,6 @@
 @use 'global' as *;
 
+
 .c-section-title {
   font-size: rem(20);
   font-weight: $regular;
@@ -9,8 +10,8 @@
     font-size: rem(30);
   }
 }
-.c-section-title::before {
-  content: "Content";
+
+.c-section-title--en {
   font-size: rem(50);
   font-family: $second-font-family;
   color: $yellow;
@@ -25,4 +26,8 @@
     left: 0;
     transform: initial;
   }
+}
+
+.c-section-title--right {
+
 }

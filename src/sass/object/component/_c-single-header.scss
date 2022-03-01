@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.single-header {
+.c-single-header {
   font-size: rem(20);
   font-weight: $medium;
   line-height: calc(35 / 20);
@@ -9,13 +9,13 @@
     line-height: calc(35 / 23);
   }
 }
-.single-header__info {
+.c-single-header__info {
   margin-top: rem(32);
 }
-.single-header__date {
+.c-single-header__date {
   margin-right: rem(24);
 }
-.single-header__category {
+.c-single-header__category {
   letter-spacing: 0.002em;
   text-align: center;
   border: 1px solid $white;
