@@ -2,6 +2,7 @@
 
 .p-top-works {
   max-width: rem(1100);
+  margin: 0 auto;
 }
 .p-top-works__content {
   margin-top: rem(48);
@@ -9,6 +10,7 @@
     display: flex;
     align-items: center;
     background: linear-gradient(90deg,  transparent 0%,  transparent 25%, $black3 25%, $black3 100%);
+    margin-right: calc(50% - 50vw);
   }
 }
 .p-top-works__slider {
