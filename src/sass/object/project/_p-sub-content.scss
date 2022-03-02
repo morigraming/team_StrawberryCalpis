@@ -27,6 +27,9 @@
 
 .p-sub-content__introduction-text {
   margin-top: rem(24);
+  @include mq(md) {
+    line-height: calc(35 / 16);
+  }
 }
 
 .p-sub-content__item:not(:first-of-type) {

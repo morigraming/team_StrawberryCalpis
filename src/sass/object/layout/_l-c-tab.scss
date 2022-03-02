@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-c-tab {
+  margin-top: rem(85);
+  @include mq(md) {
+    margin-top: rem(115);
+  }
+}
