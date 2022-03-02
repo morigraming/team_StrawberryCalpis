@@ -5,8 +5,10 @@
     display: flex;
   }
 }
+
 .c-text-with-img__img {
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   @include mq(md) {
     width: 50%;
     margin-right: rem(30);
