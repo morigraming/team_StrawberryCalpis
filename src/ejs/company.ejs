@@ -11,7 +11,8 @@
         <%- include('./component/_c-eyecatch',{text:'企業概要', src:'../images/company/eyecatch.jpg'}) %>
       </div>
       <div class="l-breadcrumbs">
-        <%- include('./component/_c-breadcrumbs',{text:'企業概要'}) %>
+        <% const pages=['企業概要'] %>
+          <%- include('./component/_c-breadcrumbs',{pages}) %>
       </div>
       <div class="p-sub-company l-sub-company">
         <div class="l-inner">

@@ -1,7 +1,7 @@
 <!--ブログの内容は以下の書き方で呼び出し元のファイルに書く。（＃は削除してください！）-->
 
 <%# const blogLists=[{src:'./images/works/works__img01.jpeg', title:'CodeUps株式会社',
-    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+    text:'p-card。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
     category:'カテゴリ1',date:'2022/02/11'},{src:'./images/works/works__img02.jpeg', title:'CodeUps2株式会社',
     text:'2テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
     category:'カテゴリ2',date:'2022/02/12'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
@@ -13,11 +13,7 @@
     <%#- include('./project/_p-cards', {blogLists, column:'4'}) %>
 
 
-
-
-
-
-        <div class="p-cards">
+        <div class="p-cards p-cards--<%= column %>">
             <% blogLists.forEach(function(blogList){ %>
                 <div class="p-cards__card p-cards__card--<%= column %>">
                     <%- include('../project/_p-card', {blogList,column}) %>

@@ -1,23 +1,24 @@
 <div class="p-card">
-
-    <div class="p-card__img p-card__img--<%= column%>">
-        <img src="<%= blogList.src %>" alt="">
-    </div>
-    <div class="p-card__contents p-card__contents--<%= column%>">
-        <h3 class="p-card__title p-card__title--<%= column%>">
-            <%= blogList.title %>
-        </h3>
-
-        <p class="p-card__text">
-            <%= blogList.text %>
-        </p>
-        <div class="p-card__meta">
-            <p class="p-card__category"><a href="" class="">
-                    <%= blogList.category %>
-                </a></p>
-            <p class="p-card__date">
-                <%= blogList.date %>
-            </p>
+    <a href="single-blog.html">
+        <div class="p-card__img p-card__img--<%= column%>">
+            <img src="<%= blogList.src %>" alt="">
         </div>
-    </div>
+        <div class="p-card__contents p-card__contents--<%= column%>">
+            <h3 class="p-card__title p-card__title--<%= column%>">
+                <%= blogList.title %>
+            </h3>
+
+            <p class="p-card__text">
+                <%= blogList.text %>
+            </p>
+            <div class="p-card__meta">
+                <p class="p-card__category">
+                    <%= blogList.category %>
+    </a></p>
+    <p class="p-card__date">
+        <%= blogList.date %>
+    </p>
+</div>
+</div>
+</a>
 </div>

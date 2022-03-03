@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./project/_p-head') %>
+
   <body>
     <header>
       <%- include('./project/_p-header') %>
@@ -10,14 +11,15 @@
         <%- include('./component/_c-eyecatch',{text:'事業内容', src:'../images/content/eyecatch.jpg'}) %>
       </section>
       <section class="l-breadcrumbs">
-        <%- include('./component/_c-breadcrumbs',{text:'事業内容'}) %>
+        <% const pages=['事業内容'] %>
+          <%- include('./component/_c-breadcrumbs',{pages}) %>
       </section>
       <div class="l-sub-content">
         <%- include('./project/_p-sub-content') %>
       </div>
-      
-      
-      
+
+
+
     </main>
     <footer>
       <%- include('./project/_p-footer') %>

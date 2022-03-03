@@ -1,7 +1,17 @@
-<div class="c-breadcrumbs">
-    <div class="l-inner">
-        <p><a href="index.html" class="c-breadcrumbs__link">トップ</a><span class="c-breadcrumbs__gt">&gt;</span>
-            <%= text %>
-        </p>
-    </div>
-</div>
+<!--呼び出しサンプル pages=[]にトップページ以下の表示させたいページ名称を記載　-->
+<%# const pages=['会社概要'] %>
+    <%#- include('./component/_c-breadcrumbs',{pages}) %>
+        <!--呼び出しサンプル pages=[]にトップページ以下の表示させたいページ名称を記載　-->
+        <%# const pages=['制作実績','制作実績詳細'] %>
+            <%#- include('./component/_c-breadcrumbs',{pages}) %>
+
+                <div class="c-breadcrumbs">
+                    <div class="l-inner">
+                        <p><a href="index.html" class="c-breadcrumbs__link">トップ</a>
+                            <% pages.forEach(function(page){ %>
+                                <span class="c-breadcrumbs__gt">&gt;</span>
+                                <%= page %>
+                                    <% }); %>
+                        </p>
+                    </div>
+                </div>

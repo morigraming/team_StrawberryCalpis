@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./project/_p-head') %>
+<%- include('./project/_p-head') %>
+
   <body>
     <header>
-        <%- include('./project/_p-header') %>
+      <%- include('./project/_p-header') %>
     </header>
     <main>
       <section class="l-eyecatch">
         <%- include('./component/_c-eyecatch',{text:'お問い合わせ', src:'../images/contact/eyecatch.jpg'}) %>
       </section>
       <section class="l-breadcrumbs">
-        <%- include('./component/_c-breadcrumbs',{text:'お問い合わせ'}) %>
+        <% const pages=['お問い合わせ'] %>
+          <%- include('./component/_c-breadcrumbs',{pages}) %>
       </section>
       <section class="l-form">
         <div class="l-inner">
@@ -22,4 +24,5 @@
       <%- include('./project/_p-footer') %>
     </footer>
   </body>
+
 </html>

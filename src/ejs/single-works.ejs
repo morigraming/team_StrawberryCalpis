@@ -8,29 +8,24 @@
         </header>
         <main>
             <div class="l-breadcrumbs">
-                <%- include('./component/_c-breadcrumbs',{text:'制作実績'}) %>
+                <% const pages=['制作実績','制作実績詳細'] %>
+                    <%- include('./component/_c-breadcrumbs',{pages}) %>
             </div>
             <div class="l-single-works">
                 <%- include('./project/_p-single-works') %>
             </div>
             <div class="l-relatedcontents">
                 <% const blogLists=[{src:'./images/works/works__img01.jpeg', title:'CodeUps株式会社',
-                    text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                    text:'テキストが入る！。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
                     category:'カテゴリ1',date:'2022/02/11'},{src:'./images/works/works__img02.jpeg', title:'CodeUps2株式会社',
-                    text:'2テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
+                    text:'2テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
                     category:'カテゴリ2',date:'2022/02/12'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
-                    text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-                    category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
-                    text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-                    category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
-                    text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-                    category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
                     text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
                     category:'カテゴリ3',date:'2022/02/13'},{src:'images/works/works__img03.jpeg', title:'CodeUps3株式会社',
                     text:'3テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
                     category:'カテゴリ3',date:'2022/02/13'}]%>
 
-                    <%- include('./project/_p-relatedcontents', {blogLists, column:'3'}) %>
+                    <%- include('./project/_p-relatedcontents', {blogLists, column:'4'}) %>
             </div>
             <div class="l-contactarea">
                 <%- include('./project/_p-contactarea') %>
