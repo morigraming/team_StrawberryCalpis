@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .l-single-blog {
-  padding: rem(16) 0 0;
+  margin-top: rem(78);
   @include mq("md") {
-    padding: rem(91) 0 0;
+    margin-top: rem(91);
   }
 }

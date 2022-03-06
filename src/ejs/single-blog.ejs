@@ -6,15 +6,23 @@
         <%- include('./project/_p-header') %>
       </header>
 
-      <main>
-        <section class="l-breadcrumbs">
-          <%- include('./component/_c-breadcrumbs',{text:'ブログ記事詳細'}) %>
-        </section>
-        
+      <main>  
+        <div class="l-breadcrumb">
+          <% const pages=['ブログ記事一覧','ブログ記事詳細'] %>
+          <%- include('./component/_c-breadcrumbs',{pages}) %>
+        </div>
         <section class="l-single-blog">
           <%- include('./project/_p-single-blog') %>
         </section>
+        <section class="l-relatedcontents">
+            <% const blogLists=[{src:'./images/single-blog/relative01.jpg', title:'タイトルが入ります。タイトルが入ります。',
+                category:'カテゴリ1',date:'2022/02/11'},{src:'./images/single-blog/relative02.jpg', title:'タイトルが入ります。タイトルが入ります。',
+                category:'カテゴリ2',date:'2022/02/12'},{src:'images/single-blog/relative03.jpg', title:'タイトルが入ります。タイトルが入ります。',
+                category:'カテゴリ3',date:'2022/02/13'},{src:'images/single-blog/relative04.jpg', title:'タイトルが入ります。タイトルが入ります。',
+                category:'カテゴリ3',date:'2022/02/13'}]%>
 
+                <%- include('./project/_p-relatedcontents', {blogLists, column:'4'}) %>
+        </section>
         <section class="l-contactarea">
           <%- include('./project/_p-contactarea') %>
         </section>
