@@ -11,11 +11,20 @@
   position: relative;
   display: block;
   overflow: hidden;
-  // margin: 0 auto;
   @include mq(md) {
-      max-width: 360px;
+    max-width: 360px;
   }
 }
+
+.c-btn span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+}
+
+.c-btn:hover span {
+  color:#333;
+}
+
 .c-btn::before {
   content: '';
   width: 100%;
@@ -24,13 +33,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
 }
-.c-btn:hover {
-  color: $black3;
-}
+
 .c-btn:hover.c-btn::before {
   transform: translateX(0);
   transition: 0.5s ease-in-out;
