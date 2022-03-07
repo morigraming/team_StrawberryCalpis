@@ -25,23 +25,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ヘッダー
   $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(0, 0, 0, 1)');
+    if ($('.p-mainview').height() < $(this).scrollTop() || $('.c-eyecatch').height() < $(this).scrollTop() || $('.p-single-works__slider').height() < $(this).scrollTop() ||$('.p-single-blog__img').height() < $(this).scrollTop()) {
+      $('header').css('background', 'rgba(0, 0, 0, 1)');
+      $('.c-header-nav__btn').css('background', '#333');
+      $('.c-header-nav__btn').css('color', '#fff');
     } else {
-      $('.header').css('background', 'rgba(0 , 0, 0, .5)');
+      $('header').css('background', 'rgba(0, 0, 0, .5)');
+      $('.c-header-nav__btn').css('background', '#fff');
+      $('.c-header-nav__btn').css('color', '#333');
     }
   });
 
   // ハンバーガーメニュー
   $('.c-burger-btn').on('click', function () {
     $(this).toggleClass('js-close');
-    $('.menu').toggleClass('js-open');
-  });
-
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('js-open');
-    $('.menu').toggleClass('js-open');
+    $('.p-modal').toggleClass('js-open');
+    $('body').toggleClass('fixed');
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
