@@ -7,13 +7,19 @@
 .p-top-overview__content {
   margin-top: rem(48);
   @include mq(md) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     background: linear-gradient(90deg, $black3 0%,  $black3 75%, transparent 75%, transparent 100%);
     margin-left: calc(50% - 50vw);
   }
 }
+
+.p-top-overview__content .l-inner {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
 .p-top-overview__img {
   width: 100vw;
   margin: 0 calc(50% - 50vw);
