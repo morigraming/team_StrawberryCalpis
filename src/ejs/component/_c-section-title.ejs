@@ -1,4 +1,8 @@
 <h2 class="c-section-title">
   <%= secTitle %>
-  <span class="c-section-title--en"><%= secTitleEn %></span>
+  <% if((secTitleEn == 'Works') || (secTitleEn == 'Blog') ){%>
+    <span class="c-section-title--en c-sectiontitle--rev"><%= secTitleEn %></span>
+    <% }else{ %>
+      <span class="c-section-title--en"><%= secTitleEn %></span>
+    <% } %>
 </h2>
