@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.p-single-blog {
+  @include mq(md) {
+    max-width: rem(800);
+    margin: 0 auto;
+  }
+}
+
+.p-single-blog__h1 {
+  font-size: rem(20);
+  @include mq(md)  {
+    font-size: rem(23);
+  }
+}
+
+.p-single-blog__meta {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__img {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__text {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__h2 {
+  font-size: rem(20);
+  position: relative;
+  margin-top: rem(24);
+  padding-left: .5em;
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__h2::before {
+  content: "";
+  background-color: $white;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include mq(md) {
+    
+  }
+}
+
+.p-single-blog__h3 {
+  margin-top: rem(24);
+  list-style: initial;
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__list {
+  margin-top: rem(24);
+  list-style: initial;
+  list-style-position: inside;
+  padding-left: rem(10);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-single-blog__list--decimal {
+  padding-left: rem(10);
+  list-style: none;
+}
+
+.p-single-blog__pagenation {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}

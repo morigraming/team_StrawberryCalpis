@@ -5,9 +5,26 @@
   color: $white;
   background-color: $black;
   overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+  padding-top: rem(210);
+  padding-bottom: rem(210);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.p-modal::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+.p-modal.js-open {
+  display: block;
 }
 
 .p-modal .c-nav__link {

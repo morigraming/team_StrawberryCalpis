@@ -3,6 +3,7 @@
 .p-top-news-list {
   @include mq(md) {
     display: flex;
+    justify-content: space-between;
   }
 }
 .p-top-news-list__content {
