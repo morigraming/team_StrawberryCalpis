@@ -35,23 +35,3 @@
     width: 22.8%;
   }
 }
-
-.p-cards:first-child {
-  position: relative;
-}
-.p-cards:first-child:before {
-  content: "NEW";
-  letter-spacing: rem(2);
-  font-size: rem(16);
-  color: $black;
-  background-color: $orange;
-  width: rem(60);
-  height: rem(60);
-  border-radius: 50%;
-  line-height: rem(60);
-  text-align: center;
-  position: absolute;
-  top: rem(-15);
-  left: rem(-15);
-  z-index: 5;
-}
