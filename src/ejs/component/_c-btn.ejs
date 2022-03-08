@@ -1,1 +1,5 @@
-<a href="<%= link %>" class="c-btn"><span><%= text %></span></a>
+<% if(text == 'すべて見る'){%>
+  <a href="<%= link %>" class="c-btn c-btn--white"><span><%= text %></span></a>
+  <% }else{ %>
+    <a href="<%= link %>" class="c-btn"><span><%= text %></span></a>
+    <% } %>

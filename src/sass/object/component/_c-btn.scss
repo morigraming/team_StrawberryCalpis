@@ -16,6 +16,11 @@
   }
 }
 
+.c-btn--white {
+  color: $black3;
+  background-color: $white;
+}
+
 .c-btn span {
   position: relative;
   z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
@@ -23,6 +28,10 @@
 
 .c-btn:hover span {
   color:#333;
+}
+
+.c-btn--white:hover span {
+  color: $white;
 }
 
 .c-btn::before {
@@ -35,6 +44,10 @@
   left: 0;
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
+}
+
+.c-btn--white::before {
+  background-color: $black3;
 }
 
 .c-btn:hover.c-btn::before {
