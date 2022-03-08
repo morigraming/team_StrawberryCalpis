@@ -14,6 +14,12 @@
   }
 }
 
+.c-nav__item:first-of-type {
+  @include mq("md") {
+    display: none;
+  }
+}
+
 .c-nav__link {
   font-size: rem(16);
   letter-spacing: 0.125;

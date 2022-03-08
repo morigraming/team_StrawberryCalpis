@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .c-btn {
+  font-size: rem(20);
   padding: rem(10) rem(40);
   background-color: $black3;
   border: 1px solid $white;
@@ -12,14 +13,17 @@
   display: block;
   overflow: hidden;
   @include mq(md) {
+    font-size: rem(16);
     max-width: 360px;
   }
 }
 
 .c-btn--white {
-  color: $black3;
-  background-color: $white;
-  border: none;
+  @include mq(md) {
+    color: $black3;
+    background-color: $white;
+    border: none;
+  }
 }
 
 .c-btn span {
@@ -48,7 +52,9 @@
 }
 
 .c-btn--white::before {
-  background-color: $black3;
+  @include mq(md) {
+    background-color: $black3;
+  }
 }
 
 .c-btn:hover.c-btn::before {
