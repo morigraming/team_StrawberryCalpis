@@ -1,16 +1,9 @@
 @use "global" as *;
 
-.p-top-works {
-  max-width: rem(1100);
-  margin: 0 auto;
-}
 .p-top-works__content {
   margin-top: rem(48);
   @include mq(md) {
-    // display: flex;
-    // align-items: center;
-    background: linear-gradient(90deg,  transparent 0%,  transparent 25%, $black3 25%, $black3 100%);
-    margin-right: calc(50% - 50vw);
+    background: linear-gradient(90deg,  transparent 0%,  transparent 32%, $black3 32%, $black3 100%);
   }
 }
 
@@ -40,6 +33,8 @@
     background-color: initial;
     padding-top: rem(120);
     padding-bottom: rem(120);
+    padding-left: rem(20);
+    padding-right: 0;
     margin: 0;
   }
 }
