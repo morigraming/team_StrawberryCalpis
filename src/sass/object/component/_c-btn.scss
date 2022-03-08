@@ -32,11 +32,13 @@
 }
 
 .c-btn:hover span {
-  color:#333;
+  color: $black3;
 }
 
 .c-btn--white:hover span {
-  color: $white;
+  @include mq(md) {
+    color: $white;
+  }
 }
 
 .c-btn::before {

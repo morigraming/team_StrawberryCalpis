@@ -10,6 +10,7 @@
 }
 
 .p-footer__contents {
+  text-align: center;
   @include mq("md") {
     padding: 0 rem(32);
     display: flex;
@@ -21,6 +22,7 @@
 .p-footer__logo {
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
   width: rem(70);
   @include mq("md") {
     margin: 0;
