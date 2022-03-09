@@ -7,8 +7,11 @@
       <%- include('./project/_p-header') %>
     </header>
     <main>
-      <section>
+      <section class="l-eyecatch u-desktop">
         <%- include('./component/_c-eyecatch',{text:'事業内容', src:'../images/content/eyecatch.jpg'}) %>
+      </section>
+      <section class="l-eyecatch u-mobile">
+        <%- include('./component/_c-eyecatch',{text:'事業内容', src:'../images/content/eyecatch-sp.jpg'}) %>
       </section>
       <section class="l-breadcrumbs">
         <% const pages=['事業内容'] %>
