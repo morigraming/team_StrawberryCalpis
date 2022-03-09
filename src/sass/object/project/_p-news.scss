@@ -23,6 +23,7 @@
   color: $white;
   border: $white rem(1) solid;
   font-size: rem(14);
+  font-weight: $medium;
   margin-left: rem(29);
   padding: rem(6) rem(22);
   @include mq("md") {
