@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./project/_p-head') %>
-  <header>
-    <%- include('./project/_p-header') %>
-  </header>
-  <main>
-    <div class="l-breadcrumb">
-      <% const pages=['ブログ記事一覧','ブログ記事詳細'] %>
-        <%- include('./component/_c-breadcrumbs',{pages}) %>
-    </div>
-    <section class="l-single-blog">
-      <%- include('./project/_p-single-blog') %>
-    </section>
-    <section class="l-relatedcontents">
-      <% const blogLists=[{src:'./images/single-blog/relative01.jpg', title:'タイトルが入ります。タイトルが入ります。',
-        category:'カテゴリ1',date:'2022/02/11'},{src:'./images/single-blog/relative02.jpg', title:'タイトルが入ります。タイトルが入ります。',
-        category:'カテゴリ2',date:'2022/02/12'},{src:'images/single-blog/relative03.jpg', title:'タイトルが入ります。タイトルが入ります。',
-        category:'カテゴリ3',date:'2022/02/13'},{src:'images/single-blog/relative04.jpg', title:'タイトルが入ります。タイトルが入ります。',
-        category:'カテゴリ3',date:'2022/02/13'}]%>
-
-        <%- include('./project/_p-relatedcontents', {blogLists, column:'4'}) %>
-    </section>
-    <section class="l-contactarea">
-      <%- include('./project/_p-contactarea') %>
-    </section>
-  </main>
-
-  <%- include('./project/_p-footer') %>
-    </body>
-
+  <body>
+    <header>
+      <%- include('./project/_p-header') %>
+    </header>
+    <main>
+      <div class="l-breadcrumb">
+        <% const pages=['ブログ記事一覧','ブログ記事詳細'] %>
+          <%- include('./component/_c-breadcrumbs',{pages}) %>
+      </div>
+      <section class="l-single-blog">
+        <%- include('./project/_p-single-blog') %>
+      </section>
+      <section class="l-relatedcontents">
+        <% const blogLists=[{src:'./images/single-blog/relative01.jpg', title:'タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+          category:'カテゴリ1',date:'2022/02/11'},{src:'./images/single-blog/relative02.jpg', title:'タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+          category:'カテゴリ2',date:'2022/02/12'},{src:'images/single-blog/relative03.jpg', title:'タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+          category:'カテゴリ3',date:'2022/02/13'},{src:'images/single-blog/relative04.jpg', title:'タイトルが入ります。タイトルが入ります。',text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+          category:'カテゴリ3',date:'2022/02/13'}]%>
+          <%- include('./project/_p-relatedcontents', {blogLists, column:'4'}) %>
+      </section>
+      <section class="l-contactarea">
+        <%- include('./project/_p-contactarea') %>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <%- include('./project/_p-footer') %>
+    </footer>
+  </body>
 </html>

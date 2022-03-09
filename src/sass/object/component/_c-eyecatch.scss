@@ -5,6 +5,7 @@
   height: rem(425);
   overflow: hidden;
   position: relative;
+  font-weight: $bold;
   @include mq(md) {
     height: rem(370);
   }

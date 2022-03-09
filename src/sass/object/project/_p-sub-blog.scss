@@ -1,26 +1,17 @@
 @use "global" as *;
 
-.p-top-blog__content {
-  margin-top: rem(54);
+.p-sub-blog {
+  margin-top: rem(37);
   @include mq(md) {
-    margin-top: rem(48);
-  }
-}
-.p-top-blog__btn {
-  margin: rem(24) auto rem(120);
-  @include mq(md) {
-    margin: rem(48) auto rem(150);
+    margin-top: rem(40);
   }
 }
 
-.p-top-blog__btn .c-btn {
-  margin: 0 auto;
-}
-
-.p-top-blog .p-cards:first-child {
+.p-sub-blog .p-cards:first-child {
   position: relative;
 }
-.p-top-blog .p-cards:first-child:before {
+
+.p-sub-blog .p-cards:first-child:before {
   content: "New";
   letter-spacing: rem(2);
   font-size: rem(16);

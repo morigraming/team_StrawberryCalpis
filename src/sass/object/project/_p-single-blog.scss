@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-single-blog {
+  overflow: hidden;
   @include mq(md) {
     max-width: rem(800);
     margin: 0 auto;
@@ -9,6 +10,7 @@
 
 .p-single-blog h1 {
   font-size: rem(20);
+  font-weight: $regular;
   @include mq(md)  {
     font-size: rem(23);
   }
@@ -22,14 +24,19 @@
 }
 
 .p-single-blog__img {
-  margin-top: rem(16);
+  width: 100vw;
+  margin: rem(16) calc(50% - 50vw) 0;
   @include mq(md) {
     margin-top: rem(32);
+    width: 100%;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 
 .p-single-blog p {
   margin-top: rem(24);
+  line-height: 2.19;
   @include mq(md) {
     margin-top: rem(32);
   }
@@ -37,6 +44,7 @@
 
 .p-single-blog h2 {
   font-size: rem(20);
+  font-weight: $regular;
   position: relative;
   margin-top: rem(24);
   padding-left: .5em;
@@ -59,14 +67,30 @@
 }
 
 .p-single-blog h3 {
+  font-weight: $regular;
   margin-top: rem(24);
   list-style: initial;
+  position: relative;
+  display: inline-block;
+  border-bottom: solid .125em $white;
   @include mq(md) {
     margin-top: rem(32);
   }
 }
 
+.p-single-blog h3::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: -.125em ;
+  border-bottom: .125em solid $yellow-bg;
+  width: 4em;
+  height: 100%;
+}
+
 .p-single-blog ul {
+  line-height: 2.19;
   margin-top: rem(24);
   list-style: initial;
   list-style-position: inside;
@@ -77,8 +101,13 @@
 }
 
 .p-single-blog ol {
+  line-height: 2.19;
   padding-left: rem(10);
   list-style: none;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
 }
 
 .p-single-blog__pagenation {
