@@ -5,9 +5,11 @@
   flex-direction: column;
   height: 100%;
 }
+
 .p-card__img {
   width: 100%;
   position: relative;
+  flex-grow: 0;
 }
 
 .p-card__img::before {
