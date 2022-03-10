@@ -10,8 +10,6 @@
   height: 100vh;
   max-height: rem(768);
   overflow: hidden;
-  background-color: blue;
-
   @include mq("md") {
     max-height: rem(851);
   }
