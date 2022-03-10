@@ -6,7 +6,6 @@
   margin: 0 calc(50% - 50vw);
   overflow: hidden;
   aspect-ratio: 375/300;
-  overflow: auto;
 
   @include mq("md") {
     width: 100%;
