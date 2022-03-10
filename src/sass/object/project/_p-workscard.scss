@@ -39,8 +39,8 @@
   font-size: rem(20);
   font-weight: $medium;
   line-height: 1.75;
-  margin-top: rem(24);
+  padding-top: rem(24);
   @include mq("md") {
-    margin-top: rem(12);
+    padding-top: rem(12);
   }
 }

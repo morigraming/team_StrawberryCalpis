@@ -8,9 +8,12 @@
 
 .p-sub-works__contents {
   margin-top: rem(17);
+  display: flex;
+  flex-direction: column;
+  grid-gap: rem(48) 0;
   @include mq("md") {
     margin-top: rem(40);
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     grid-gap: rem(118) 4.36%;
   }
