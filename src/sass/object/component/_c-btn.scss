@@ -20,6 +20,7 @@
 }
 
 .c-btn--white {
+  white-space: nowrap;
   @include mq(md) {
     color: $black3;
     background-color: $white;

@@ -26,6 +26,7 @@
   font-weight: $medium;
   margin-left: rem(29);
   padding: rem(6) rem(22);
+  white-space: nowrap;
   @include mq("md") {
     margin-left: rem(45);
   }
