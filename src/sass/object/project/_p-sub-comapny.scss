@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.p-sub-company {
+  overflow: hidden;
+}
 .p-sub-company__map {
   margin-top: rem(120);
   @include mq("md") {

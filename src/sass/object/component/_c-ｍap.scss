@@ -5,6 +5,7 @@
   position: relative;
   margin: 0 calc(50% - 50vw);
   overflow: hidden;
+  height: rem(450);
   aspect-ratio: 375/300;
 
   @include mq("md") {

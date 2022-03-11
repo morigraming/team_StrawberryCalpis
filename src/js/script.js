@@ -37,11 +37,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ハンバーガーメニュー
-  $('.c-burger-btn').on('click', function () {
-    $(this).toggleClass('js-close');
-    $('.p-modal').toggleClass('js-open');
-    $('body').toggleClass('fixed');
+  $('.c-burger-btn').on('click', function () { 
+    $(this).toggleClass('active'); 
+    $('.p-modal').toggleClass('active'); 
+    $('body').toggleClass('fixed');  
   });
+
+
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {

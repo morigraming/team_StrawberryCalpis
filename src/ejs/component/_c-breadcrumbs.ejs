@@ -7,10 +7,10 @@
 
                 <div class="c-breadcrumbs">
                     <div class="l-inner">
-                        <p><a href="index.html" class="c-breadcrumbs__link">トップ</a>
+                        <p><a href="./index.html" class="c-breadcrumbs__link">トップ</a>
                             <% pages.forEach(function(page){ %>
                                 <span class="c-breadcrumbs__gt">&gt;</span>
-                                <%= page %>
+                                <a href="./<%= page %>.html"><%= page %></a>
                                     <% }); %>
                         </p>
                     </div>

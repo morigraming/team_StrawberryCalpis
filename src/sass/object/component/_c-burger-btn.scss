@@ -23,14 +23,25 @@
 .c-bar--03 {
   top: rem(26);
 }
-.c-burger-btn.js-close .c-bar--01 {
+// .c-burger-btn.js-close .c-bar--01 {
+//   top: rem(20);
+//   transform: rotate(45deg);
+// }
+// .c-burger-btn.js-close .c-bar--02 {
+//   opacity: 0;
+// }
+// .c-burger-btn.js-close .c-bar--03 {
+//   top: rem(20);
+//   transform: rotate(-45deg);
+// }
+.c-burger-btn.active .c-bar--01 {
   top: rem(20);
   transform: rotate(45deg);
 }
-.c-burger-btn.js-close .c-bar--02 {
+.c-burger-btn.active .c-bar--02 {
   opacity: 0;
 }
-.c-burger-btn.js-close .c-bar--03 {
+.c-burger-btn.active .c-bar--03 {
   top: rem(20);
   transform: rotate(-45deg);
 }
