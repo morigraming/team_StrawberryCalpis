@@ -5,27 +5,17 @@
   position: relative;
   margin: 0 calc(50% - 50vw);
   overflow: hidden;
-  aspect-ratio: 375/300;
+  padding-top: 125%;
 
   @include mq("md") {
     width: 100%;
     margin: 0;
-    aspect-ratio: 1100/367;
+    padding-top: 33.3636%;
   }
 }
-/*
-.c-map::before {
-  content: "";
-  display: block;
-  padding-top: 80%;
-  @include mq("md") {
-    padding-top: 33.36%;
-  }
-}
-*/
+
 .c-map iframe {
   position: absolute;
-  display: block;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
