@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.c-nav__list {
+.c-nav__items {
   height: inherit;
   @include mq("md") {
     display: flex;

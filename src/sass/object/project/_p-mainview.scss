@@ -8,10 +8,10 @@
 
 .p-mainview__slider .slide-img {
   height: 100vh;
-  max-height: rem(768);
+
   overflow: hidden;
   @include mq("md") {
-    max-height: rem(851);
+
   }
 }
 
