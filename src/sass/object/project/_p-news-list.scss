@@ -1,5 +1,5 @@
 @use "global" as *;
 
-.p-news-list:not(:first-of-type) {
+.p-news:not(:first-of-type) {
   margin-top: rem(32);
 }
